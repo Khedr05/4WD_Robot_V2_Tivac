@@ -178,3 +178,41 @@ void DCM_updateStopFlag(void)
 	DCM_g_stopFlag = TRUE;
 }
 /****************************************************************************************************************************************/
+* you need to specify which motor you want to rotate*/
+enu_dcm_error_t DCM_rotateDCM(enu_dcm_motor_side_t DCM_l_motorNumber, Uint16_t DCM_a_rotateSpeed)
+{
+	uint8_t error_state = DCM_OK;
+	if( ST_g_carMotors == NULL)
+	{
+		error_state = DCM_WRONG;	
+	}
+	else
+	{	
+	
+		if(DCM_l_motorNumber == MOTOR_RIGHT)
+		{
+			DCM_changeDCMDirection(ST_g_carMotors, MOTOR_RIGHT);
+			// High delay to see it on simulation
+			// gpt asynch_delay --> TMR_intDelay_ms(620);
+			//Call a PWM function to generate the desired pwm signal with the desired duty Cycle --> DCM_u8SetDutyCycleOfPWM(ROTATION_DUTY_CYCLE);
+			while(u8_g_timeOut == 0);
+			// gpt_stop--> TIMER0_stop();
+			u8_g_timeOut = 0;
+			DCM_changeDCMDirection(ST_g_carMotors, MOTOR_RIGHT);	
+		}
+		else
+		{
+			DCM_changeDCMDirection(ST_g_carMotors, MOTOR_LEFT);
+			// High delay to see it on simulation
+			// gpt asynch_delay --> TMR_intDelay_ms(620);
+			//Call a PWM function to generate the desired pwm signal with the desired duty Cycle --> DCM_u8SetDutyCycleOfPWM(ROTATION_DUTY_CYCLE);
+			while(u8_g_timeOut == 0);
+			// gpt_stop--> TIMER0_stop();
+			u8_g_timeOut = 0;
+			DCM_changeDCMDirection(ST_g_carMotors, MOTOR_LEFT);	
+		}
+	}
+	return (enu_dcm_error_t)error_state;
+}
+
+/****************************************************************************************************************************************/
