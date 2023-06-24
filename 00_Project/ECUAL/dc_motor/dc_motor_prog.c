@@ -122,7 +122,38 @@ enu_dcm_error_t DCM_changeDCMDirection(str_dcm_confige_t* DCM_a_ptrToConfig, enu
 			
 		}
 	}
-	// (void)PWM_stop();  /*Call the PWM_stop function*/
+	
 	return (enu_dcm_error_t)error_state;		
 }
 /****************************************************************************************************************************************/
+enu_dcm_error_t DCM_stopMotor(str_dcm_confige_t* DCM_a_ptrToConfig, enu_dcm_motor_side_t DCM_a_motorNum)
+{
+
+	uint8_t error_state = DCM_OK;
+	uint8_t dcm_loc_loopCounter = FALSE;
+	if( DCM_a_ptrToConfig == NULL)
+	{
+		error_state = DCM_WRONG;	
+	}
+	else
+	{
+
+		for( dcm_loc_loopCounter ; dcm_loc_loopCounter < (DCM_MAX_PIN_NUM + (DCM_a_motorNum * DCM_MAX_PIN_NUM)); dcm_loc_loopCounter++ )
+		{
+			error_state = (enu_dcm_error_t) GPIO_writeLogic( DCM_a_ptrToConfig[dcm_loc_loopCounter]-> gpio_for_dcm_config, DCM_LOW); 
+			if(error_state != DCM_OK)
+			{
+				error_state = DCM_WRONG;
+			}	
+			else
+			{
+				//Do nothing
+			}	
+		}
+	}
+	// (void)PWM_stop();  /*Call the PWM_stop function*/
+	return (enu_dcm_error_t)error_state;		
+	
+}
+
+/************************************************************************************************************************************/
