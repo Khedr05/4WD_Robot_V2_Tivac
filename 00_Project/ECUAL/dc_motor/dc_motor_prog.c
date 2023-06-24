@@ -157,3 +157,19 @@ enu_dcm_error_t DCM_stopMotor(str_dcm_confige_t* DCM_a_ptrToConfig, enu_dcm_moto
 }
 
 /************************************************************************************************************************************/
+enu_dcm_error_t DCM_u8SetDutyCycleOfPWM(Uchar8_t DCM_a_dutyCycleValue)
+{
+	uint8_t error_state = DCM_OK;
+	if (DCM_a_dutyCycleValue > MAX_DUTY_CYCLE)
+	{
+		error_state = DCM_WRONG;
+		
+	}
+	else
+	{
+		// Call a PWM function to generate the desired pwm signal with the desired duty Cycle
+	}
+	return (enu_dcm_error_t)error_state;
+}
+
+/****************************************************************************************************************************************/
