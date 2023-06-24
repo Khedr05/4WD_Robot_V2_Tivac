@@ -1,0 +1,235 @@
+Component: Arm Compiler for Embedded 6.19 Tool: armlink [5e73cb00]
+
+==============================================================================
+
+Section Cross References
+
+    gpio_prog.o(.text.GPIO_init) refers to gpio_prog.o(.text.GPIO_setPinCallbackHandelr) for GPIO_setPinCallbackHandelr
+    gpio_prog.o(.text.GPIO_init) refers to gpio_prog.o(.text.GPIO_interruptPortEnable) for GPIO_interruptPortEnable
+    gpio_prog.o(.ARM.exidx.text.GPIO_init) refers to gpio_prog.o(.text.GPIO_init) for [Anonymous Symbol]
+    gpio_prog.o(.text.GPIO_setPinCallbackHandelr) refers to gpio_prog.o(.bss.GPIO_ptrFuncportaIrqCallback) for GPIO_ptrFuncportaIrqCallback
+    gpio_prog.o(.text.GPIO_setPinCallbackHandelr) refers to gpio_prog.o(.bss.GPIO_ptrFuncportbIrqCallback) for GPIO_ptrFuncportbIrqCallback
+    gpio_prog.o(.text.GPIO_setPinCallbackHandelr) refers to gpio_prog.o(.bss.GPIO_ptrFuncportcIrqCallback) for GPIO_ptrFuncportcIrqCallback
+    gpio_prog.o(.text.GPIO_setPinCallbackHandelr) refers to gpio_prog.o(.bss.GPIO_ptrFuncportdIrqCallback) for GPIO_ptrFuncportdIrqCallback
+    gpio_prog.o(.text.GPIO_setPinCallbackHandelr) refers to gpio_prog.o(.bss.GPIO_ptrFuncporteIrqCallback) for GPIO_ptrFuncporteIrqCallback
+    gpio_prog.o(.text.GPIO_setPinCallbackHandelr) refers to gpio_prog.o(.bss.GPIO_ptrFuncportfIrqCallback) for GPIO_ptrFuncportfIrqCallback
+    gpio_prog.o(.ARM.exidx.text.GPIO_setPinCallbackHandelr) refers to gpio_prog.o(.text.GPIO_setPinCallbackHandelr) for [Anonymous Symbol]
+    gpio_prog.o(.text.GPIO_interruptPortEnable) refers to gpio_prog.o(.text.__NVIC_EnableIRQ) for __NVIC_EnableIRQ
+    gpio_prog.o(.ARM.exidx.text.GPIO_interruptPortEnable) refers to gpio_prog.o(.text.GPIO_interruptPortEnable) for [Anonymous Symbol]
+    gpio_prog.o(.ARM.exidx.text.GPIO_portDeinit) refers to gpio_prog.o(.text.GPIO_portDeinit) for [Anonymous Symbol]
+    gpio_prog.o(.ARM.exidx.text.GPIO_writeLogic) refers to gpio_prog.o(.text.GPIO_writeLogic) for [Anonymous Symbol]
+    gpio_prog.o(.ARM.exidx.text.GPIO_readLogic) refers to gpio_prog.o(.text.GPIO_readLogic) for [Anonymous Symbol]
+    gpio_prog.o(.ARM.exidx.text.GPIO_toggleLogic) refers to gpio_prog.o(.text.GPIO_toggleLogic) for [Anonymous Symbol]
+    gpio_prog.o(.ARM.exidx.text.GPIO_setDirection) refers to gpio_prog.o(.text.GPIO_setDirection) for [Anonymous Symbol]
+    gpio_prog.o(.ARM.exidx.text.__NVIC_EnableIRQ) refers to gpio_prog.o(.text.__NVIC_EnableIRQ) for [Anonymous Symbol]
+    gpio_prog.o(.text.GPIO_interruptPortDisable) refers to gpio_prog.o(.text.__NVIC_DisableIRQ) for __NVIC_DisableIRQ
+    gpio_prog.o(.ARM.exidx.text.GPIO_interruptPortDisable) refers to gpio_prog.o(.text.GPIO_interruptPortDisable) for [Anonymous Symbol]
+    gpio_prog.o(.ARM.exidx.text.__NVIC_DisableIRQ) refers to gpio_prog.o(.text.__NVIC_DisableIRQ) for [Anonymous Symbol]
+    gpio_prog.o(.text.GPIOA_Handler) refers to gpio_prog.o(.bss.GPIO_ptrFuncportaIrqCallback) for GPIO_ptrFuncportaIrqCallback
+    gpio_prog.o(.ARM.exidx.text.GPIOA_Handler) refers to gpio_prog.o(.text.GPIOA_Handler) for [Anonymous Symbol]
+    gpio_prog.o(.text.GPIOB_Handler) refers to gpio_prog.o(.bss.GPIO_ptrFuncportbIrqCallback) for GPIO_ptrFuncportbIrqCallback
+    gpio_prog.o(.ARM.exidx.text.GPIOB_Handler) refers to gpio_prog.o(.text.GPIOB_Handler) for [Anonymous Symbol]
+    gpio_prog.o(.text.GPIOC_Handler) refers to gpio_prog.o(.bss.GPIO_ptrFuncportcIrqCallback) for GPIO_ptrFuncportcIrqCallback
+    gpio_prog.o(.ARM.exidx.text.GPIOC_Handler) refers to gpio_prog.o(.text.GPIOC_Handler) for [Anonymous Symbol]
+    gpio_prog.o(.text.GPIOD_Handler) refers to gpio_prog.o(.bss.GPIO_ptrFuncportdIrqCallback) for GPIO_ptrFuncportdIrqCallback
+    gpio_prog.o(.ARM.exidx.text.GPIOD_Handler) refers to gpio_prog.o(.text.GPIOD_Handler) for [Anonymous Symbol]
+    gpio_prog.o(.text.GPIOE_Handler) refers to gpio_prog.o(.bss.GPIO_ptrFuncporteIrqCallback) for GPIO_ptrFuncporteIrqCallback
+    gpio_prog.o(.ARM.exidx.text.GPIOE_Handler) refers to gpio_prog.o(.text.GPIOE_Handler) for [Anonymous Symbol]
+    gpio_prog.o(.text.GPIOF_Handler) refers to gpio_prog.o(.bss.GPIO_ptrFuncportfIrqCallback) for GPIO_ptrFuncportfIrqCallback
+    gpio_prog.o(.ARM.exidx.text.GPIOF_Handler) refers to gpio_prog.o(.text.GPIOF_Handler) for [Anonymous Symbol]
+    led_prog.o(.text.LED_initialize) refers to gpio_prog.o(.text.GPIO_init) for GPIO_init
+    led_prog.o(.ARM.exidx.text.LED_initialize) refers to led_prog.o(.text.LED_initialize) for [Anonymous Symbol]
+    led_prog.o(.text.LED_turnOn) refers to gpio_prog.o(.text.GPIO_writeLogic) for GPIO_writeLogic
+    led_prog.o(.ARM.exidx.text.LED_turnOn) refers to led_prog.o(.text.LED_turnOn) for [Anonymous Symbol]
+    led_prog.o(.text.LED_turnOff) refers to gpio_prog.o(.text.GPIO_writeLogic) for GPIO_writeLogic
+    led_prog.o(.ARM.exidx.text.LED_turnOff) refers to led_prog.o(.text.LED_turnOff) for [Anonymous Symbol]
+    led_prog.o(.text.LED_toggle) refers to gpio_prog.o(.text.GPIO_toggleLogic) for GPIO_toggleLogic
+    led_prog.o(.ARM.exidx.text.LED_toggle) refers to led_prog.o(.text.LED_toggle) for [Anonymous Symbol]
+    startup_tm4c123.o(STACK) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_tm4c123.o(HEAP) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_tm4c123.o(RESET) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_tm4c123.o(RESET) refers to startup_tm4c123.o(STACK) for __initial_sp
+    startup_tm4c123.o(RESET) refers to startup_tm4c123.o(.text) for Reset_Handler
+    startup_tm4c123.o(RESET) refers to gpio_prog.o(.text.GPIOA_Handler) for GPIOA_Handler
+    startup_tm4c123.o(RESET) refers to gpio_prog.o(.text.GPIOB_Handler) for GPIOB_Handler
+    startup_tm4c123.o(RESET) refers to gpio_prog.o(.text.GPIOC_Handler) for GPIOC_Handler
+    startup_tm4c123.o(RESET) refers to gpio_prog.o(.text.GPIOD_Handler) for GPIOD_Handler
+    startup_tm4c123.o(RESET) refers to gpio_prog.o(.text.GPIOE_Handler) for GPIOE_Handler
+    startup_tm4c123.o(RESET) refers to gpio_prog.o(.text.GPIOF_Handler) for GPIOF_Handler
+    startup_tm4c123.o(.text) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_tm4c123.o(.text) refers to system_tm4c123.o(.text.SystemInit) for SystemInit
+    startup_tm4c123.o(.text) refers to __main.o(!!!main) for __main
+    startup_tm4c123.o(.text) refers to startup_tm4c123.o(HEAP) for Heap_Mem
+    startup_tm4c123.o(.text) refers to startup_tm4c123.o(STACK) for Stack_Mem
+    system_tm4c123.o(.text.SystemCoreClockUpdate) refers to system_tm4c123.o(.text.getOscClk) for getOscClk
+    system_tm4c123.o(.text.SystemCoreClockUpdate) refers to system_tm4c123.o(.data.SystemCoreClock) for SystemCoreClock
+    system_tm4c123.o(.ARM.exidx.text.SystemCoreClockUpdate) refers to system_tm4c123.o(.text.SystemCoreClockUpdate) for [Anonymous Symbol]
+    system_tm4c123.o(.ARM.exidx.text.getOscClk) refers to system_tm4c123.o(.text.getOscClk) for [Anonymous Symbol]
+    system_tm4c123.o(.ARM.exidx.text.SystemInit) refers to system_tm4c123.o(.text.SystemInit) for [Anonymous Symbol]
+    __main.o(!!!main) refers to __rtentry.o(.ARM.Collect$$rtentry$$00000000) for __rt_entry
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for __rt_entry_li
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for __rt_entry_main
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000C) for __rt_entry_postli_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000009) for __rt_entry_postsh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000002) for __rt_entry_presh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for __rt_entry_sh
+    __rtentry2.o(.ARM.Collect$$rtentry$$00000008) refers to boardinit2.o(.text) for _platform_post_stackheap_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) refers to libinit.o(.ARM.Collect$$libinit$$00000000) for __rt_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) refers to boardinit3.o(.text) for _platform_post_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to exit.o(.text) for exit
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000001) for .ARM.Collect$$rtentry$$00000001
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000008) for .ARM.Collect$$rtentry$$00000008
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for .ARM.Collect$$rtentry$$0000000A
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) for .ARM.Collect$$rtentry$$0000000B
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for .ARM.Collect$$rtentry$$0000000D
+    __rtentry4.o(.ARM.Collect$$rtentry$$00000004) refers to sys_stackheap_outer.o(.text) for __user_setup_stackheap
+    __rtentry4.o(.ARM.exidx) refers to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for .ARM.Collect$$rtentry$$00000004
+    sys_stackheap_outer.o(.text) refers to libspace.o(.text) for __user_perproc_libspace
+    sys_stackheap_outer.o(.text) refers to startup_tm4c123.o(.text) for __user_initial_stackheap
+    exit.o(.text) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for __rt_exit
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000030) for __rt_lib_init_alloca_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000029) for __rt_lib_init_argv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001D) for __rt_lib_init_atexit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000023) for __rt_lib_init_clock_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000034) for __rt_lib_init_cpp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000032) for __rt_lib_init_exceptions_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000001) for __rt_lib_init_fp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000021) for __rt_lib_init_fp_trap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000025) for __rt_lib_init_getenv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000C) for __rt_lib_init_heap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000013) for __rt_lib_init_lc_collate_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000015) for __rt_lib_init_lc_ctype_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000017) for __rt_lib_init_lc_monetary_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000019) for __rt_lib_init_lc_numeric_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001B) for __rt_lib_init_lc_time_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000006) for __rt_lib_init_preinit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000010) for __rt_lib_init_rand_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000004) for __rt_lib_init_relocate_pie_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000035) for __rt_lib_init_return
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001F) for __rt_lib_init_signal_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000027) for __rt_lib_init_stdio_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000E) for __rt_lib_init_user_alloc_1
+    libspace.o(.text) refers to libspace.o(.bss) for __libspace_start
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for .ARM.Collect$$rtexit$$00000000
+    libinit2.o(.ARM.Collect$$libinit$$00000001) refers to fpinit.o(x$fpl$fpinit) for _fp_init
+    libinit2.o(.ARM.Collect$$libinit$$00000012) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$00000014) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$00000016) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$00000018) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$0000001A) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$00000028) refers to argv_veneer.o(.emb_text) for __ARM_argv_veneer
+    libinit2.o(.ARM.Collect$$libinit$$00000029) refers to argv_veneer.o(.emb_text) for __ARM_argv_veneer
+    rtexit2.o(.ARM.Collect$$rtexit$$00000003) refers to libshutdown.o(.ARM.Collect$$libshutdown$$00000000) for __rt_lib_shutdown
+    rtexit2.o(.ARM.Collect$$rtexit$$00000004) refers to sys_exit.o(.text) for _sys_exit
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000001) for .ARM.Collect$$rtexit$$00000001
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for .ARM.Collect$$rtexit$$00000003
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for .ARM.Collect$$rtexit$$00000004
+    argv_veneer.o(.emb_text) refers to _get_argv_nomalloc.o(.text) for __ARM_get_argv
+    sys_exit.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_exit.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    sys_exit_hlt.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_exit_hlt.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    _get_argv_nomalloc.o(.text) refers (Special) to hrguard.o(.text) for __heap_region$guard
+    _get_argv_nomalloc.o(.text) refers to defsig_rtmem_outer.o(.text) for __rt_SIGRTMEM
+    _get_argv_nomalloc.o(.text) refers to sys_command.o(.text) for _sys_command_string
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000002) for __rt_lib_shutdown_cpp_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000007) for __rt_lib_shutdown_fp_trap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F) for __rt_lib_shutdown_heap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000010) for __rt_lib_shutdown_return
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A) for __rt_lib_shutdown_signal_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000004) for __rt_lib_shutdown_stdio_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C) for __rt_lib_shutdown_user_alloc_1
+    sys_command.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_command.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    sys_command_hlt.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_command_hlt.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig_rtmem_outer.o(.text) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_rtmem_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
+    defsig_rtmem_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
+    rt_raise.o(.text) refers to __raise.o(.text) for __raise
+    rt_raise.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_exit.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_rtmem_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    __raise.o(.text) refers to defsig.o(CL$$defsig) for __default_signal_handler
+    defsig_general.o(.text) refers to sys_wrch.o(.text) for _ttywrch
+    sys_wrch.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_wrch.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    sys_wrch_hlt.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_wrch_hlt.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig.o(CL$$defsig) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_abrt_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_fpe_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtred_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_stak_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_pvfn_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_cppl_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_segv_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_other.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing app.o(.text), (0 bytes).
+    Removing gpio_config.o(.text), (0 bytes).
+    Removing gpio_config.o(.bss.a_cfgPins), (100 bytes).
+    Removing gpio_prog.o(.text), (0 bytes).
+    Removing gpio_prog.o(.text.GPIO_init), (3820 bytes).
+    Removing gpio_prog.o(.ARM.exidx.text.GPIO_init), (8 bytes).
+    Removing gpio_prog.o(.text.GPIO_setPinCallbackHandelr), (288 bytes).
+    Removing gpio_prog.o(.ARM.exidx.text.GPIO_setPinCallbackHandelr), (8 bytes).
+    Removing gpio_prog.o(.text.GPIO_interruptPortEnable), (202 bytes).
+    Removing gpio_prog.o(.ARM.exidx.text.GPIO_interruptPortEnable), (8 bytes).
+    Removing gpio_prog.o(.text.GPIO_portDeinit), (58 bytes).
+    Removing gpio_prog.o(.ARM.exidx.text.GPIO_portDeinit), (8 bytes).
+    Removing gpio_prog.o(.text.GPIO_writeLogic), (194 bytes).
+    Removing gpio_prog.o(.ARM.exidx.text.GPIO_writeLogic), (8 bytes).
+    Removing gpio_prog.o(.text.GPIO_readLogic), (140 bytes).
+    Removing gpio_prog.o(.ARM.exidx.text.GPIO_readLogic), (8 bytes).
+    Removing gpio_prog.o(.text.GPIO_toggleLogic), (100 bytes).
+    Removing gpio_prog.o(.ARM.exidx.text.GPIO_toggleLogic), (8 bytes).
+    Removing gpio_prog.o(.text.GPIO_setDirection), (210 bytes).
+    Removing gpio_prog.o(.ARM.exidx.text.GPIO_setDirection), (8 bytes).
+    Removing gpio_prog.o(.text.__NVIC_EnableIRQ), (48 bytes).
+    Removing gpio_prog.o(.ARM.exidx.text.__NVIC_EnableIRQ), (8 bytes).
+    Removing gpio_prog.o(.text.GPIO_interruptPortDisable), (202 bytes).
+    Removing gpio_prog.o(.ARM.exidx.text.GPIO_interruptPortDisable), (8 bytes).
+    Removing gpio_prog.o(.text.__NVIC_DisableIRQ), (56 bytes).
+    Removing gpio_prog.o(.ARM.exidx.text.__NVIC_DisableIRQ), (8 bytes).
+    Removing gpio_prog.o(.ARM.exidx.text.GPIOA_Handler), (8 bytes).
+    Removing gpio_prog.o(.ARM.exidx.text.GPIOB_Handler), (8 bytes).
+    Removing gpio_prog.o(.ARM.exidx.text.GPIOC_Handler), (8 bytes).
+    Removing gpio_prog.o(.ARM.exidx.text.GPIOD_Handler), (8 bytes).
+    Removing gpio_prog.o(.ARM.exidx.text.GPIOE_Handler), (8 bytes).
+    Removing gpio_prog.o(.ARM.exidx.text.GPIOF_Handler), (8 bytes).
+    Removing led_config.o(.text), (0 bytes).
+    Removing led_config.o(.data.a_ledCfgPins), (9 bytes).
+    Removing led_prog.o(.text), (0 bytes).
+    Removing led_prog.o(.text.LED_initialize), (130 bytes).
+    Removing led_prog.o(.ARM.exidx.text.LED_initialize), (8 bytes).
+    Removing led_prog.o(.text.LED_turnOn), (132 bytes).
+    Removing led_prog.o(.ARM.exidx.text.LED_turnOn), (8 bytes).
+    Removing led_prog.o(.text.LED_turnOff), (132 bytes).
+    Removing led_prog.o(.ARM.exidx.text.LED_turnOff), (8 bytes).
+    Removing led_prog.o(.text.LED_toggle), (132 bytes).
+    Removing led_prog.o(.ARM.exidx.text.LED_toggle), (8 bytes).
+    Removing pwm_prog.o(.text), (0 bytes).
+    Removing h_gpt_prog.o(.text), (0 bytes).
+    Removing dc_motor_prog.o(.text), (0 bytes).
+    Removing push_button_prog.o(.text), (0 bytes).
+    Removing system_tm4c123.o(.text), (0 bytes).
+    Removing system_tm4c123.o(.text.SystemCoreClockUpdate), (326 bytes).
+    Removing system_tm4c123.o(.ARM.exidx.text.SystemCoreClockUpdate), (8 bytes).
+    Removing system_tm4c123.o(.text.getOscClk), (360 bytes).
+    Removing system_tm4c123.o(.ARM.exidx.text.getOscClk), (8 bytes).
+    Removing system_tm4c123.o(.ARM.exidx.text.SystemInit), (8 bytes).
+    Removing system_tm4c123.o(.data.SystemCoreClock), (4 bytes).
+
+54 unused section(s) (total 6835 bytes) removed from the image.
