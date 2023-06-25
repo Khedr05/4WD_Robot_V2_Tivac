@@ -33,7 +33,7 @@ void app_start(void)
 		if (bool_gl_is_start == FALSE)
 		{
 			Led_stop();
-	    HANDLER_start_timer(str_gl_timer.enu_GPT_timer_select,TIMER_SYNC,1,TIME_IN_SECONDS);
+	    HANDLER_start_timer(str_gl_timer.enu_GPT_timer_select,TIMER_SYNC,1000,TIME_IN_MILLIOSECONDS);
 			bool_gl_is_start = TRUE;
 		}
 		else
@@ -118,14 +118,14 @@ void Led_forward_long_side(void)
 }
 void Led_rotate(void)
 {
+	LED_turnOn(&a_ledCfgPins[2]);
 	LED_turnOn(&a_ledCfgPins[0]);
 	LED_turnOn(&a_ledCfgPins[1]);
-	LED_turnOn(&a_ledCfgPins[2]);
 }
 void Led_stop(void)
 {
 	LED_turnOn(&a_ledCfgPins[2]);
-	LED_turnOff(&a_ledCfgPins[0]);
+	LED_turnOff(&a_ledCfgPins[1]);
 	LED_turnOff(&a_ledCfgPins[1]);
 }
 void Led_forward_short_side(void)
@@ -158,7 +158,7 @@ void car_rotate(void)
 {
 	Led_rotate();
 	// ROTATE 90 DEGREE RIGHT 
-	HANDLER_start_timer(str_gl_timer.enu_GPT_timer_select,TIMER_SYNC,3000,TIME_IN_MILLIOSECONDS);
+	HANDLER_start_timer(str_gl_timer.enu_GPT_timer_select,TIMER_SYNC,500,TIME_IN_MILLIOSECONDS);
 }
 
 

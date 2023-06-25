@@ -488,56 +488,56 @@ Image Symbol Table
     i.GPIO_setPinCallbackHandelr             0x00001568   Section        0  gpio_prog.o(i.GPIO_setPinCallbackHandelr)
     i.GPIO_writeLogic                        0x00001614   Section        0  gpio_prog.o(i.GPIO_writeLogic)
     i.GPT_disable_interrupt                  0x000016c0   Section        0  gpt_program.o(i.GPT_disable_interrupt)
-    i.GPT_enable_interrupt                   0x00001744   Section        0  gpt_program.o(i.GPT_enable_interrupt)
-    i.GPT_init                               0x000017d8   Section        0  gpt_program.o(i.GPT_init)
-    i.GPT_start_timer                        0x00001970   Section        0  gpt_program.o(i.GPT_start_timer)
-    i.GPT_stop_timer                         0x00001b44   Section        0  gpt_program.o(i.GPT_stop_timer)
-    i.HANDLER_init                           0x00001b90   Section        0  htimer_program.o(i.HANDLER_init)
-    i.HANDLER_start_timer                    0x00001ba8   Section        0  htimer_program.o(i.HANDLER_start_timer)
-    i.LED_initialize                         0x00001bf0   Section        0  led_prog.o(i.LED_initialize)
-    i.LED_turnOff                            0x00001c34   Section        0  led_prog.o(i.LED_turnOff)
-    i.LED_turnOn                             0x00001c7c   Section        0  led_prog.o(i.LED_turnOn)
-    i.Led_forward_long_side                  0x00001cc4   Section        0  app.o(i.Led_forward_long_side)
-    i.Led_forward_short_side                 0x00001ce4   Section        0  app.o(i.Led_forward_short_side)
-    i.Led_rotate                             0x00001d04   Section        0  app.o(i.Led_rotate)
-    i.Led_stop                               0x00001d24   Section        0  app.o(i.Led_stop)
-    i.PUSH_BTN_intialize                     0x00001d44   Section        0  push_button_prog.o(i.PUSH_BTN_intialize)
-    i.PUSH_BTN_read_state                    0x00001db4   Section        0  push_button_prog.o(i.PUSH_BTN_read_state)
-    i.SystemInit                             0x00001e1c   Section        0  system_tm4c123.o(i.SystemInit)
-    i.TIMER0A_Handler                        0x00001eb4   Section        0  gpt_program.o(i.TIMER0A_Handler)
-    i.WTIMER0A_Handler                       0x00001ed8   Section        0  gpt_program.o(i.WTIMER0A_Handler)
-    i.__NVIC_DisableIRQ                      0x00001efc   Section        0  gpt_program.o(i.__NVIC_DisableIRQ)
-    __NVIC_DisableIRQ                        0x00001efd   Thumb Code    54  gpt_program.o(i.__NVIC_DisableIRQ)
-    i.__NVIC_EnableIRQ                       0x00001f38   Section        0  gpt_program.o(i.__NVIC_EnableIRQ)
-    __NVIC_EnableIRQ                         0x00001f39   Thumb Code    34  gpt_program.o(i.__NVIC_EnableIRQ)
-    i.__NVIC_EnableIRQ                       0x00001f5a   Section        0  gpio_prog.o(i.__NVIC_EnableIRQ)
-    __NVIC_EnableIRQ                         0x00001f5b   Thumb Code    34  gpio_prog.o(i.__NVIC_EnableIRQ)
-    i.app_init                               0x00001f7c   Section        0  app.o(i.app_init)
-    i.app_start                              0x00001fc0   Section        0  app.o(i.app_start)
-    i.car_forward_long                       0x00002080   Section        0  app.o(i.car_forward_long)
-    i.car_forward_short                      0x0000209c   Section        0  app.o(i.car_forward_short)
-    i.car_rotate                             0x000020b8   Section        0  app.o(i.car_rotate)
-    i.car_stop                               0x000020d4   Section        0  app.o(i.car_stop)
-    i.main                                   0x000020f0   Section        0  main.o(i.main)
-    i.read_start_btn                         0x000020fc   Section        0  app.o(i.read_start_btn)
-    i.stopSystem                             0x00002134   Section        0  app.o(i.stopSystem)
-    i.timeOut                                0x00002148   Section        0  app.o(i.timeOut)
-    x$fpl$ddiv                               0x00002154   Section      688  ddiv.o(x$fpl$ddiv)
-    $v0                                      0x00002154   Number         0  ddiv.o(x$fpl$ddiv)
-    ddiv_entry                               0x0000215b   Thumb Code     0  ddiv.o(x$fpl$ddiv)
-    x$fpl$dfixu                              0x00002404   Section       90  dfixu.o(x$fpl$dfixu)
-    $v0                                      0x00002404   Number         0  dfixu.o(x$fpl$dfixu)
-    x$fpl$dfltu                              0x0000245e   Section       38  dflt_clz.o(x$fpl$dfltu)
-    $v0                                      0x0000245e   Number         0  dflt_clz.o(x$fpl$dfltu)
-    x$fpl$dnaninf                            0x00002484   Section      156  dnaninf.o(x$fpl$dnaninf)
-    $v0                                      0x00002484   Number         0  dnaninf.o(x$fpl$dnaninf)
-    x$fpl$dretinf                            0x00002520   Section       12  dretinf.o(x$fpl$dretinf)
-    $v0                                      0x00002520   Number         0  dretinf.o(x$fpl$dretinf)
-    x$fpl$fpinit                             0x0000252c   Section       10  fpinit.o(x$fpl$fpinit)
-    $v0                                      0x0000252c   Number         0  fpinit.o(x$fpl$fpinit)
-    x$fpl$usenofp                            0x00002536   Section        0  usenofp.o(x$fpl$usenofp)
-    .constdata                               0x00002538   Section       80  led_prog.o(.constdata)
-    .constdata                               0x00002588   Section       60  push_button_prog.o(.constdata)
+    i.GPT_enable_interrupt                   0x00001724   Section        0  gpt_program.o(i.GPT_enable_interrupt)
+    i.GPT_init                               0x00001794   Section        0  gpt_program.o(i.GPT_init)
+    i.GPT_start_timer                        0x0000192c   Section        0  gpt_program.o(i.GPT_start_timer)
+    i.GPT_stop_timer                         0x00001b00   Section        0  gpt_program.o(i.GPT_stop_timer)
+    i.HANDLER_init                           0x00001b4c   Section        0  htimer_program.o(i.HANDLER_init)
+    i.HANDLER_start_timer                    0x00001b64   Section        0  htimer_program.o(i.HANDLER_start_timer)
+    i.LED_initialize                         0x00001bac   Section        0  led_prog.o(i.LED_initialize)
+    i.LED_turnOff                            0x00001bf0   Section        0  led_prog.o(i.LED_turnOff)
+    i.LED_turnOn                             0x00001c38   Section        0  led_prog.o(i.LED_turnOn)
+    i.Led_forward_long_side                  0x00001c80   Section        0  app.o(i.Led_forward_long_side)
+    i.Led_forward_short_side                 0x00001ca0   Section        0  app.o(i.Led_forward_short_side)
+    i.Led_rotate                             0x00001cc0   Section        0  app.o(i.Led_rotate)
+    i.Led_stop                               0x00001ce0   Section        0  app.o(i.Led_stop)
+    i.PUSH_BTN_intialize                     0x00001d00   Section        0  push_button_prog.o(i.PUSH_BTN_intialize)
+    i.PUSH_BTN_read_state                    0x00001d70   Section        0  push_button_prog.o(i.PUSH_BTN_read_state)
+    i.SystemInit                             0x00001dd8   Section        0  system_tm4c123.o(i.SystemInit)
+    i.TIMER0A_Handler                        0x00001e70   Section        0  gpt_program.o(i.TIMER0A_Handler)
+    i.WTIMER0A_Handler                       0x00001e94   Section        0  gpt_program.o(i.WTIMER0A_Handler)
+    i.__NVIC_DisableIRQ                      0x00001eb8   Section        0  gpt_program.o(i.__NVIC_DisableIRQ)
+    __NVIC_DisableIRQ                        0x00001eb9   Thumb Code    54  gpt_program.o(i.__NVIC_DisableIRQ)
+    i.__NVIC_EnableIRQ                       0x00001ef4   Section        0  gpt_program.o(i.__NVIC_EnableIRQ)
+    __NVIC_EnableIRQ                         0x00001ef5   Thumb Code    34  gpt_program.o(i.__NVIC_EnableIRQ)
+    i.__NVIC_EnableIRQ                       0x00001f16   Section        0  gpio_prog.o(i.__NVIC_EnableIRQ)
+    __NVIC_EnableIRQ                         0x00001f17   Thumb Code    34  gpio_prog.o(i.__NVIC_EnableIRQ)
+    i.app_init                               0x00001f38   Section        0  app.o(i.app_init)
+    i.app_start                              0x00001f7c   Section        0  app.o(i.app_start)
+    i.car_forward_long                       0x0000203c   Section        0  app.o(i.car_forward_long)
+    i.car_forward_short                      0x00002058   Section        0  app.o(i.car_forward_short)
+    i.car_rotate                             0x00002074   Section        0  app.o(i.car_rotate)
+    i.car_stop                               0x00002090   Section        0  app.o(i.car_stop)
+    i.main                                   0x000020ac   Section        0  main.o(i.main)
+    i.read_start_btn                         0x000020b8   Section        0  app.o(i.read_start_btn)
+    i.stopSystem                             0x000020f0   Section        0  app.o(i.stopSystem)
+    i.timeOut                                0x00002104   Section        0  app.o(i.timeOut)
+    x$fpl$ddiv                               0x00002110   Section      688  ddiv.o(x$fpl$ddiv)
+    $v0                                      0x00002110   Number         0  ddiv.o(x$fpl$ddiv)
+    ddiv_entry                               0x00002117   Thumb Code     0  ddiv.o(x$fpl$ddiv)
+    x$fpl$dfixu                              0x000023c0   Section       90  dfixu.o(x$fpl$dfixu)
+    $v0                                      0x000023c0   Number         0  dfixu.o(x$fpl$dfixu)
+    x$fpl$dfltu                              0x0000241a   Section       38  dflt_clz.o(x$fpl$dfltu)
+    $v0                                      0x0000241a   Number         0  dflt_clz.o(x$fpl$dfltu)
+    x$fpl$dnaninf                            0x00002440   Section      156  dnaninf.o(x$fpl$dnaninf)
+    $v0                                      0x00002440   Number         0  dnaninf.o(x$fpl$dnaninf)
+    x$fpl$dretinf                            0x000024dc   Section       12  dretinf.o(x$fpl$dretinf)
+    $v0                                      0x000024dc   Number         0  dretinf.o(x$fpl$dretinf)
+    x$fpl$fpinit                             0x000024e8   Section       10  fpinit.o(x$fpl$fpinit)
+    $v0                                      0x000024e8   Number         0  fpinit.o(x$fpl$fpinit)
+    x$fpl$usenofp                            0x000024f2   Section        0  usenofp.o(x$fpl$usenofp)
+    .constdata                               0x000024f4   Section       80  led_prog.o(.constdata)
+    .constdata                               0x00002544   Section       60  push_button_prog.o(.constdata)
     .data                                    0x20000000   Section       12  app.o(.data)
     .data                                    0x2000000c   Section        9  led_config.o(.data)
     .data                                    0x20000015   Section        6  push_button_cfg.o(.data)
@@ -781,49 +781,49 @@ Image Symbol Table
     GPIO_readLogic                           0x0000151d   Thumb Code    72  gpio_prog.o(i.GPIO_readLogic)
     GPIO_setPinCallbackHandelr               0x00001569   Thumb Code   146  gpio_prog.o(i.GPIO_setPinCallbackHandelr)
     GPIO_writeLogic                          0x00001615   Thumb Code   166  gpio_prog.o(i.GPIO_writeLogic)
-    GPT_disable_interrupt                    0x000016c1   Thumb Code   124  gpt_program.o(i.GPT_disable_interrupt)
-    GPT_enable_interrupt                     0x00001745   Thumb Code   134  gpt_program.o(i.GPT_enable_interrupt)
-    GPT_init                                 0x000017d9   Thumb Code   388  gpt_program.o(i.GPT_init)
-    GPT_start_timer                          0x00001971   Thumb Code   416  gpt_program.o(i.GPT_start_timer)
-    GPT_stop_timer                           0x00001b45   Thumb Code    68  gpt_program.o(i.GPT_stop_timer)
-    HANDLER_init                             0x00001b91   Thumb Code    24  htimer_program.o(i.HANDLER_init)
-    HANDLER_start_timer                      0x00001ba9   Thumb Code    70  htimer_program.o(i.HANDLER_start_timer)
-    LED_initialize                           0x00001bf1   Thumb Code    64  led_prog.o(i.LED_initialize)
-    LED_turnOff                              0x00001c35   Thumb Code    68  led_prog.o(i.LED_turnOff)
-    LED_turnOn                               0x00001c7d   Thumb Code    68  led_prog.o(i.LED_turnOn)
-    Led_forward_long_side                    0x00001cc5   Thumb Code    26  app.o(i.Led_forward_long_side)
-    Led_forward_short_side                   0x00001ce5   Thumb Code    26  app.o(i.Led_forward_short_side)
-    Led_rotate                               0x00001d05   Thumb Code    26  app.o(i.Led_rotate)
-    Led_stop                                 0x00001d25   Thumb Code    26  app.o(i.Led_stop)
-    PUSH_BTN_intialize                       0x00001d45   Thumb Code   106  push_button_prog.o(i.PUSH_BTN_intialize)
-    PUSH_BTN_read_state                      0x00001db5   Thumb Code   100  push_button_prog.o(i.PUSH_BTN_read_state)
-    SystemInit                               0x00001e1d   Thumb Code   112  system_tm4c123.o(i.SystemInit)
-    TIMER0A_Handler                          0x00001eb5   Thumb Code    28  gpt_program.o(i.TIMER0A_Handler)
-    WTIMER0A_Handler                         0x00001ed9   Thumb Code    28  gpt_program.o(i.WTIMER0A_Handler)
-    app_init                                 0x00001f7d   Thumb Code    50  app.o(i.app_init)
-    app_start                                0x00001fc1   Thumb Code   170  app.o(i.app_start)
-    car_forward_long                         0x00002081   Thumb Code    22  app.o(i.car_forward_long)
-    car_forward_short                        0x0000209d   Thumb Code    22  app.o(i.car_forward_short)
-    car_rotate                               0x000020b9   Thumb Code    24  app.o(i.car_rotate)
-    car_stop                                 0x000020d5   Thumb Code    24  app.o(i.car_stop)
-    main                                     0x000020f1   Thumb Code    12  main.o(i.main)
-    read_start_btn                           0x000020fd   Thumb Code    42  app.o(i.read_start_btn)
-    stopSystem                               0x00002135   Thumb Code    14  app.o(i.stopSystem)
-    timeOut                                  0x00002149   Thumb Code     8  app.o(i.timeOut)
-    __aeabi_ddiv                             0x00002155   Thumb Code     0  ddiv.o(x$fpl$ddiv)
-    _ddiv                                    0x00002155   Thumb Code   552  ddiv.o(x$fpl$ddiv)
-    __aeabi_d2uiz                            0x00002405   Thumb Code     0  dfixu.o(x$fpl$dfixu)
-    _dfixu                                   0x00002405   Thumb Code    90  dfixu.o(x$fpl$dfixu)
-    __aeabi_ui2d                             0x0000245f   Thumb Code     0  dflt_clz.o(x$fpl$dfltu)
-    _dfltu                                   0x0000245f   Thumb Code    38  dflt_clz.o(x$fpl$dfltu)
-    __fpl_dnaninf                            0x00002485   Thumb Code   156  dnaninf.o(x$fpl$dnaninf)
-    __fpl_dretinf                            0x00002521   Thumb Code    12  dretinf.o(x$fpl$dretinf)
-    _fp_init                                 0x0000252d   Thumb Code    10  fpinit.o(x$fpl$fpinit)
-    __fplib_config_fpu_vfp                   0x00002535   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    __fplib_config_pureend_doubles           0x00002535   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    __I$use$fp                               0x00002536   Number         0  usenofp.o(x$fpl$usenofp)
-    Region$$Table$$Base                      0x000025c4   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x000025e4   Number         0  anon$$obj.o(Region$$Table)
+    GPT_disable_interrupt                    0x000016c1   Thumb Code    90  gpt_program.o(i.GPT_disable_interrupt)
+    GPT_enable_interrupt                     0x00001725   Thumb Code   100  gpt_program.o(i.GPT_enable_interrupt)
+    GPT_init                                 0x00001795   Thumb Code   388  gpt_program.o(i.GPT_init)
+    GPT_start_timer                          0x0000192d   Thumb Code   416  gpt_program.o(i.GPT_start_timer)
+    GPT_stop_timer                           0x00001b01   Thumb Code    68  gpt_program.o(i.GPT_stop_timer)
+    HANDLER_init                             0x00001b4d   Thumb Code    24  htimer_program.o(i.HANDLER_init)
+    HANDLER_start_timer                      0x00001b65   Thumb Code    70  htimer_program.o(i.HANDLER_start_timer)
+    LED_initialize                           0x00001bad   Thumb Code    64  led_prog.o(i.LED_initialize)
+    LED_turnOff                              0x00001bf1   Thumb Code    68  led_prog.o(i.LED_turnOff)
+    LED_turnOn                               0x00001c39   Thumb Code    68  led_prog.o(i.LED_turnOn)
+    Led_forward_long_side                    0x00001c81   Thumb Code    26  app.o(i.Led_forward_long_side)
+    Led_forward_short_side                   0x00001ca1   Thumb Code    26  app.o(i.Led_forward_short_side)
+    Led_rotate                               0x00001cc1   Thumb Code    26  app.o(i.Led_rotate)
+    Led_stop                                 0x00001ce1   Thumb Code    26  app.o(i.Led_stop)
+    PUSH_BTN_intialize                       0x00001d01   Thumb Code   106  push_button_prog.o(i.PUSH_BTN_intialize)
+    PUSH_BTN_read_state                      0x00001d71   Thumb Code   100  push_button_prog.o(i.PUSH_BTN_read_state)
+    SystemInit                               0x00001dd9   Thumb Code   112  system_tm4c123.o(i.SystemInit)
+    TIMER0A_Handler                          0x00001e71   Thumb Code    28  gpt_program.o(i.TIMER0A_Handler)
+    WTIMER0A_Handler                         0x00001e95   Thumb Code    28  gpt_program.o(i.WTIMER0A_Handler)
+    app_init                                 0x00001f39   Thumb Code    50  app.o(i.app_init)
+    app_start                                0x00001f7d   Thumb Code   172  app.o(i.app_start)
+    car_forward_long                         0x0000203d   Thumb Code    22  app.o(i.car_forward_long)
+    car_forward_short                        0x00002059   Thumb Code    22  app.o(i.car_forward_short)
+    car_rotate                               0x00002075   Thumb Code    24  app.o(i.car_rotate)
+    car_stop                                 0x00002091   Thumb Code    24  app.o(i.car_stop)
+    main                                     0x000020ad   Thumb Code    12  main.o(i.main)
+    read_start_btn                           0x000020b9   Thumb Code    42  app.o(i.read_start_btn)
+    stopSystem                               0x000020f1   Thumb Code    14  app.o(i.stopSystem)
+    timeOut                                  0x00002105   Thumb Code     8  app.o(i.timeOut)
+    __aeabi_ddiv                             0x00002111   Thumb Code     0  ddiv.o(x$fpl$ddiv)
+    _ddiv                                    0x00002111   Thumb Code   552  ddiv.o(x$fpl$ddiv)
+    __aeabi_d2uiz                            0x000023c1   Thumb Code     0  dfixu.o(x$fpl$dfixu)
+    _dfixu                                   0x000023c1   Thumb Code    90  dfixu.o(x$fpl$dfixu)
+    __aeabi_ui2d                             0x0000241b   Thumb Code     0  dflt_clz.o(x$fpl$dfltu)
+    _dfltu                                   0x0000241b   Thumb Code    38  dflt_clz.o(x$fpl$dfltu)
+    __fpl_dnaninf                            0x00002441   Thumb Code   156  dnaninf.o(x$fpl$dnaninf)
+    __fpl_dretinf                            0x000024dd   Thumb Code    12  dretinf.o(x$fpl$dretinf)
+    _fp_init                                 0x000024e9   Thumb Code    10  fpinit.o(x$fpl$fpinit)
+    __fplib_config_fpu_vfp                   0x000024f1   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    __fplib_config_pureend_doubles           0x000024f1   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    __I$use$fp                               0x000024f2   Number         0  usenofp.o(x$fpl$usenofp)
+    Region$$Table$$Base                      0x00002580   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x000025a0   Number         0  anon$$obj.o(Region$$Table)
     bool_gl_is_start                         0x20000000   Data           1  app.o(.data)
     bool_gl_is_timeOut                       0x20000001   Data           1  app.o(.data)
     bool_gl_lock_state                       0x20000002   Data           1  app.o(.data)
@@ -842,9 +842,9 @@ Memory Map of the image
 
   Image Entry point : 0x0000030d
 
-  Load Region LR_1 (Base: 0x00000000, Size: 0x00002600, Max: 0xffffffff, ABSOLUTE)
+  Load Region LR_1 (Base: 0x00000000, Size: 0x000025bc, Max: 0xffffffff, ABSOLUTE)
 
-    Execution Region ER_RO (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x000025e4, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RO (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x000025a0, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -919,62 +919,62 @@ Memory Map of the image
     0x0000151c   0x0000151c   0x0000004c   Code   RO          474    i.GPIO_readLogic    gpio_prog.o
     0x00001568   0x00001568   0x000000ac   Code   RO          476    i.GPIO_setPinCallbackHandelr  gpio_prog.o
     0x00001614   0x00001614   0x000000ac   Code   RO          478    i.GPIO_writeLogic   gpio_prog.o
-    0x000016c0   0x000016c0   0x00000084   Code   RO          206    i.GPT_disable_interrupt  gpt_program.o
-    0x00001744   0x00001744   0x00000094   Code   RO          207    i.GPT_enable_interrupt  gpt_program.o
-    0x000017d8   0x000017d8   0x00000198   Code   RO          210    i.GPT_init          gpt_program.o
-    0x00001970   0x00001970   0x000001d4   Code   RO          211    i.GPT_start_timer   gpt_program.o
-    0x00001b44   0x00001b44   0x0000004c   Code   RO          212    i.GPT_stop_timer    gpt_program.o
-    0x00001b90   0x00001b90   0x00000018   Code   RO          301    i.HANDLER_init      htimer_program.o
-    0x00001ba8   0x00001ba8   0x00000046   Code   RO          302    i.HANDLER_start_timer  htimer_program.o
-    0x00001bee   0x00001bee   0x00000002   PAD
-    0x00001bf0   0x00001bf0   0x00000044   Code   RO          611    i.LED_initialize    led_prog.o
-    0x00001c34   0x00001c34   0x00000048   Code   RO          613    i.LED_turnOff       led_prog.o
-    0x00001c7c   0x00001c7c   0x00000048   Code   RO          614    i.LED_turnOn        led_prog.o
-    0x00001cc4   0x00001cc4   0x00000020   Code   RO          103    i.Led_forward_long_side  app.o
-    0x00001ce4   0x00001ce4   0x00000020   Code   RO          104    i.Led_forward_short_side  app.o
-    0x00001d04   0x00001d04   0x00000020   Code   RO          105    i.Led_rotate        app.o
-    0x00001d24   0x00001d24   0x00000020   Code   RO          106    i.Led_stop          app.o
-    0x00001d44   0x00001d44   0x00000070   Code   RO          660    i.PUSH_BTN_intialize  push_button_prog.o
-    0x00001db4   0x00001db4   0x00000068   Code   RO          661    i.PUSH_BTN_read_state  push_button_prog.o
-    0x00001e1c   0x00001e1c   0x00000098   Code   RO          735    i.SystemInit        system_tm4c123.o
-    0x00001eb4   0x00001eb4   0x00000024   Code   RO          213    i.TIMER0A_Handler   gpt_program.o
-    0x00001ed8   0x00001ed8   0x00000024   Code   RO          214    i.WTIMER0A_Handler  gpt_program.o
-    0x00001efc   0x00001efc   0x0000003c   Code   RO          215    i.__NVIC_DisableIRQ  gpt_program.o
-    0x00001f38   0x00001f38   0x00000022   Code   RO          216    i.__NVIC_EnableIRQ  gpt_program.o
-    0x00001f5a   0x00001f5a   0x00000022   Code   RO          480    i.__NVIC_EnableIRQ  gpio_prog.o
-    0x00001f7c   0x00001f7c   0x00000044   Code   RO          107    i.app_init          app.o
-    0x00001fc0   0x00001fc0   0x000000c0   Code   RO          108    i.app_start         app.o
-    0x00002080   0x00002080   0x0000001c   Code   RO          109    i.car_forward_long  app.o
-    0x0000209c   0x0000209c   0x0000001c   Code   RO          110    i.car_forward_short  app.o
-    0x000020b8   0x000020b8   0x0000001c   Code   RO          111    i.car_rotate        app.o
-    0x000020d4   0x000020d4   0x0000001c   Code   RO          112    i.car_stop          app.o
-    0x000020f0   0x000020f0   0x0000000c   Code   RO            4    i.main              main.o
-    0x000020fc   0x000020fc   0x00000038   Code   RO          113    i.read_start_btn    app.o
-    0x00002134   0x00002134   0x00000014   Code   RO          114    i.stopSystem        app.o
-    0x00002148   0x00002148   0x0000000c   Code   RO          115    i.timeOut           app.o
-    0x00002154   0x00002154   0x000002b0   Code   RO          781    x$fpl$ddiv          fz_wm.l(ddiv.o)
-    0x00002404   0x00002404   0x0000005a   Code   RO          784    x$fpl$dfixu         fz_wm.l(dfixu.o)
-    0x0000245e   0x0000245e   0x00000026   Code   RO          788    x$fpl$dfltu         fz_wm.l(dflt_clz.o)
-    0x00002484   0x00002484   0x0000009c   Code   RO          795    x$fpl$dnaninf       fz_wm.l(dnaninf.o)
-    0x00002520   0x00002520   0x0000000c   Code   RO          797    x$fpl$dretinf       fz_wm.l(dretinf.o)
-    0x0000252c   0x0000252c   0x0000000a   Code   RO          884    x$fpl$fpinit        fz_wm.l(fpinit.o)
-    0x00002536   0x00002536   0x00000000   Code   RO          799    x$fpl$usenofp       fz_wm.l(usenofp.o)
-    0x00002536   0x00002536   0x00000002   PAD
-    0x00002538   0x00002538   0x00000050   Data   RO          615    .constdata          led_prog.o
-    0x00002588   0x00002588   0x0000003c   Data   RO          662    .constdata          push_button_prog.o
-    0x000025c4   0x000025c4   0x00000020   Data   RO          952    Region$$Table       anon$$obj.o
+    0x000016c0   0x000016c0   0x00000064   Code   RO          206    i.GPT_disable_interrupt  gpt_program.o
+    0x00001724   0x00001724   0x00000070   Code   RO          207    i.GPT_enable_interrupt  gpt_program.o
+    0x00001794   0x00001794   0x00000198   Code   RO          210    i.GPT_init          gpt_program.o
+    0x0000192c   0x0000192c   0x000001d4   Code   RO          211    i.GPT_start_timer   gpt_program.o
+    0x00001b00   0x00001b00   0x0000004c   Code   RO          212    i.GPT_stop_timer    gpt_program.o
+    0x00001b4c   0x00001b4c   0x00000018   Code   RO          301    i.HANDLER_init      htimer_program.o
+    0x00001b64   0x00001b64   0x00000046   Code   RO          302    i.HANDLER_start_timer  htimer_program.o
+    0x00001baa   0x00001baa   0x00000002   PAD
+    0x00001bac   0x00001bac   0x00000044   Code   RO          611    i.LED_initialize    led_prog.o
+    0x00001bf0   0x00001bf0   0x00000048   Code   RO          613    i.LED_turnOff       led_prog.o
+    0x00001c38   0x00001c38   0x00000048   Code   RO          614    i.LED_turnOn        led_prog.o
+    0x00001c80   0x00001c80   0x00000020   Code   RO          103    i.Led_forward_long_side  app.o
+    0x00001ca0   0x00001ca0   0x00000020   Code   RO          104    i.Led_forward_short_side  app.o
+    0x00001cc0   0x00001cc0   0x00000020   Code   RO          105    i.Led_rotate        app.o
+    0x00001ce0   0x00001ce0   0x00000020   Code   RO          106    i.Led_stop          app.o
+    0x00001d00   0x00001d00   0x00000070   Code   RO          660    i.PUSH_BTN_intialize  push_button_prog.o
+    0x00001d70   0x00001d70   0x00000068   Code   RO          661    i.PUSH_BTN_read_state  push_button_prog.o
+    0x00001dd8   0x00001dd8   0x00000098   Code   RO          735    i.SystemInit        system_tm4c123.o
+    0x00001e70   0x00001e70   0x00000024   Code   RO          213    i.TIMER0A_Handler   gpt_program.o
+    0x00001e94   0x00001e94   0x00000024   Code   RO          214    i.WTIMER0A_Handler  gpt_program.o
+    0x00001eb8   0x00001eb8   0x0000003c   Code   RO          215    i.__NVIC_DisableIRQ  gpt_program.o
+    0x00001ef4   0x00001ef4   0x00000022   Code   RO          216    i.__NVIC_EnableIRQ  gpt_program.o
+    0x00001f16   0x00001f16   0x00000022   Code   RO          480    i.__NVIC_EnableIRQ  gpio_prog.o
+    0x00001f38   0x00001f38   0x00000044   Code   RO          107    i.app_init          app.o
+    0x00001f7c   0x00001f7c   0x000000c0   Code   RO          108    i.app_start         app.o
+    0x0000203c   0x0000203c   0x0000001c   Code   RO          109    i.car_forward_long  app.o
+    0x00002058   0x00002058   0x0000001c   Code   RO          110    i.car_forward_short  app.o
+    0x00002074   0x00002074   0x0000001c   Code   RO          111    i.car_rotate        app.o
+    0x00002090   0x00002090   0x0000001c   Code   RO          112    i.car_stop          app.o
+    0x000020ac   0x000020ac   0x0000000c   Code   RO            4    i.main              main.o
+    0x000020b8   0x000020b8   0x00000038   Code   RO          113    i.read_start_btn    app.o
+    0x000020f0   0x000020f0   0x00000014   Code   RO          114    i.stopSystem        app.o
+    0x00002104   0x00002104   0x0000000c   Code   RO          115    i.timeOut           app.o
+    0x00002110   0x00002110   0x000002b0   Code   RO          781    x$fpl$ddiv          fz_wm.l(ddiv.o)
+    0x000023c0   0x000023c0   0x0000005a   Code   RO          784    x$fpl$dfixu         fz_wm.l(dfixu.o)
+    0x0000241a   0x0000241a   0x00000026   Code   RO          788    x$fpl$dfltu         fz_wm.l(dflt_clz.o)
+    0x00002440   0x00002440   0x0000009c   Code   RO          795    x$fpl$dnaninf       fz_wm.l(dnaninf.o)
+    0x000024dc   0x000024dc   0x0000000c   Code   RO          797    x$fpl$dretinf       fz_wm.l(dretinf.o)
+    0x000024e8   0x000024e8   0x0000000a   Code   RO          884    x$fpl$fpinit        fz_wm.l(fpinit.o)
+    0x000024f2   0x000024f2   0x00000000   Code   RO          799    x$fpl$usenofp       fz_wm.l(usenofp.o)
+    0x000024f2   0x000024f2   0x00000002   PAD
+    0x000024f4   0x000024f4   0x00000050   Data   RO          615    .constdata          led_prog.o
+    0x00002544   0x00002544   0x0000003c   Data   RO          662    .constdata          push_button_prog.o
+    0x00002580   0x00002580   0x00000020   Data   RO          952    Region$$Table       anon$$obj.o
 
 
-    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x000025e4, Size: 0x0000001c, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x000025a0, Size: 0x0000001c, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x000025e4   0x0000000c   Data   RW          116    .data               app.o
-    0x2000000c   0x000025f0   0x00000009   Data   RW          584    .data               led_config.o
-    0x20000015   0x000025f9   0x00000006   Data   RW          703    .data               push_button_cfg.o
+    0x20000000   0x000025a0   0x0000000c   Data   RW          116    .data               app.o
+    0x2000000c   0x000025ac   0x00000009   Data   RW          584    .data               led_config.o
+    0x20000015   0x000025b5   0x00000006   Data   RW          703    .data               push_button_cfg.o
 
 
-    Execution Region ER_ZI (Exec base: 0x2000001c, Load base: 0x00002600, Size: 0x00000354, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_ZI (Exec base: 0x2000001c, Load base: 0x000025bc, Size: 0x00000354, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -992,10 +992,10 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       588        108          0         12          0       7206   app.o
+       588        106          0         12          0       7206   app.o
          0          0          0          0          0       2440   gpio_config.o
       4576        124          0          0        184       9287   gpio_prog.o
-      1398        124          0          0         60       8066   gpt_program.o
+      1330        124          0          0         60       8026   gpt_program.o
         94          0          0          0          0       2357   htimer_program.o
          0          0          0          9          0       1071   led_config.o
        212         12         80          0          0       5616   led_prog.o
@@ -1006,7 +1006,7 @@ Image component sizes
        152         40          0          0          0        581   system_tm4c123.o
 
     ----------------------------------------------------------------------
-      7528        442        792         28        756      79253   Object Totals
+      7460        440        792         28        756      79213   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          4          0          0          1          0          0   (incl. Padding)
 
@@ -1064,15 +1064,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      8908        606        792         28        852      76193   Grand Totals
-      8908        606        792         28        852      76193   ELF Image Totals
-      8908        606        792         28          0          0   ROM Totals
+      8840        604        792         28        852      76153   Grand Totals
+      8840        604        792         28        852      76153   ELF Image Totals
+      8840        604        792         28          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 9700 (   9.47kB)
+    Total RO  Size (Code + RO Data)                 9632 (   9.41kB)
     Total RW  Size (RW Data + ZI Data)               880 (   0.86kB)
-    Total ROM Size (Code + RO Data + RW Data)       9728 (   9.50kB)
+    Total ROM Size (Code + RO Data + RW Data)       9660 (   9.43kB)
 
 ==============================================================================
 

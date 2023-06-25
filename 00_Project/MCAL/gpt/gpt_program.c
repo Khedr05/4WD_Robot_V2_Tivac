@@ -281,13 +281,6 @@ enu_GPT_status_t GPT_enable_interrupt(enu_GPT_timer_select_t enu_arg_GPT_timer_s
 	{
 		if (bool_gs_is_timer_init[enu_arg_GPT_timer_select] == TRUE)
 		{
-			/* case of re enable interrupt*/
-			if(GET_BIT(GPTMIMR(enu_arg_GPT_timer_select),GPTMIMR_TATOIM) == TRUE)
-			{
-				enu_GPT_status_return = GPT_INVALID_OPERATION_ERROR;
-			}
-			else
-			{
 				SET_BIT(GPTMIMR(enu_arg_GPT_timer_select),GPTMIMR_TATOIM);
 				if(enu_arg_GPT_timer_select == GPT_TIMER0_SELECT)
 				{
@@ -303,8 +296,8 @@ enu_GPT_status_t GPT_enable_interrupt(enu_GPT_timer_select_t enu_arg_GPT_timer_s
 				}
 				__enable_irq();
 				
-			}
-	}
+			
+	 }
 		}
 	
 	else
@@ -322,13 +315,7 @@ enu_GPT_status_t GPT_disable_interrupt(enu_GPT_timer_select_t enu_arg_GPT_timer_
 	/* check on selected timer range*/
 	if(enu_arg_GPT_timer_select < GPT_INVALID_TIMER_SELECT)
 	{
-		/* case of re disable interrupt*/
-    if(GET_BIT(GPTMIMR(enu_arg_GPT_timer_select),GPTMIMR_TATOIM) != TRUE)
-		{
-			enu_GPT_status_return = GPT_INVALID_OPERATION_ERROR;
-		}
-		else
-		{
+		
 			CLEAR_BIT(GPTMIMR(enu_arg_GPT_timer_select),GPTMIMR_TATOIM);
 			if(enu_arg_GPT_timer_select == GPT_TIMER0_SELECT)
 			{
@@ -342,7 +329,7 @@ enu_GPT_status_t GPT_disable_interrupt(enu_GPT_timer_select_t enu_arg_GPT_timer_
 			{
 				/* TODO SUPPORT ALL REST INTERRUPTS*/
 			}
-		}
+		
 	}
 	
 	else

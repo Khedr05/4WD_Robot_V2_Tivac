@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\4WD_project.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\4WD_project.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Sun Jun 25 22:32:02 2023
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Sun Jun 25 23:57:51 2023
 <BR><P>
 <H3>Maximum Stack Usage =        136 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1289,7 +1289,7 @@ Global Symbols
 <LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_turnOff
 </UL>
 
-<P><STRONG><a name="[96]"></a>GPT_disable_interrupt</STRONG> (Thumb, 124 bytes, Stack size 16 bytes, gpt_program.o(i.GPT_disable_interrupt))
+<P><STRONG><a name="[96]"></a>GPT_disable_interrupt</STRONG> (Thumb, 90 bytes, Stack size 16 bytes, gpt_program.o(i.GPT_disable_interrupt))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = GPT_disable_interrupt
 </UL>
 <BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_DisableIRQ
@@ -1297,7 +1297,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HANDLER_start_timer
 </UL>
 
-<P><STRONG><a name="[98]"></a>GPT_enable_interrupt</STRONG> (Thumb, 134 bytes, Stack size 16 bytes, gpt_program.o(i.GPT_enable_interrupt))
+<P><STRONG><a name="[98]"></a>GPT_enable_interrupt</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, gpt_program.o(i.GPT_enable_interrupt))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = GPT_enable_interrupt
 </UL>
 <BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_EnableIRQ
@@ -1461,7 +1461,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[af]"></a>app_start</STRONG> (Thumb, 170 bytes, Stack size 8 bytes, app.o(i.app_start))
+<P><STRONG><a name="[af]"></a>app_start</STRONG> (Thumb, 172 bytes, Stack size 8 bytes, app.o(i.app_start))
 <BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = app_start &rArr; read_start_btn &rArr; HANDLER_start_timer &rArr; GPT_start_timer &rArr; __aeabi_d2uiz
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HANDLER_start_timer
