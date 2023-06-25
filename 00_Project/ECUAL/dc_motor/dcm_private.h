@@ -18,14 +18,14 @@
 #define	    MOT0_EN_PIN_NUMBER_0	  2
 #define		MOT0_EN_PIN_NUMBER_1	  3	
 #define		MOT0_PWM_PIN_NUMBER		  0
-#define		MOT0_EN_PORT_NUMBER		  DIO_PORTD
-#define		MOT0_PWM_PORT_NUMBER	  DIO_PORTD
+#define		MOT0_EN_PORT_NUMBER		  GPIO_PORTA 
+#define		MOT0_PWM_PORT_NUMBER	  GPIO_PORTA 
  /********************* Motor_1 Configurations ***********************/
 #define	    MOT1_EN_PIN_NUMBER_0	  6
 #define		MOT1_EN_PIN_NUMBER_1	  7
 #define		MOT1_PWM_PIN_NUMBER		  1
-#define		MOT1_EN_PORT_NUMBER		  DIO_PORTD
-#define		MOT1_PWM_PORT_NUMBER	  DIO_PORTD
+#define		MOT1_EN_PORT_NUMBER		  GPIO_PORTA 
+#define		MOT1_PWM_PORT_NUMBER	  GPIO_PORTA 
 
 /* End of Configurations */
 
