@@ -119,10 +119,6 @@
       <TargetDriverDllRegistry>
         <SetRegEntry>
           <Number>0</Number>
-          <Key>DLGUARM</Key>
-        </SetRegEntry>
-        <SetRegEntry>
-          <Number>0</Number>
           <Key>ARMRTXEVENTFLAGS</Key>
           <Name>-L70 -Z18 -C0 -M0 -T1</Name>
         </SetRegEntry>
@@ -319,7 +315,7 @@
 
   <Group>
     <GroupName>common</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -551,7 +547,7 @@
 
   <Group>
     <GroupName>led</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -674,7 +670,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>D:\4WD\ECUAL\dc_motor\dc_motor_prog.c</PathWithFileName>
+      <PathWithFileName>.\ECUAL\dc_motor\dc_motor_prog.c</PathWithFileName>
       <FilenameWithoutPath>dc_motor_prog.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -686,7 +682,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>D:\4WD\ECUAL\dc_motor\dcm_cfg.c</PathWithFileName>
+      <PathWithFileName>.\ECUAL\dc_motor\dcm_cfg.c</PathWithFileName>
       <FilenameWithoutPath>dcm_cfg.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -698,7 +694,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>D:\4WD\ECUAL\dc_motor\dcm_cfg.h</PathWithFileName>
+      <PathWithFileName>.\ECUAL\dc_motor\dcm_cfg.h</PathWithFileName>
       <FilenameWithoutPath>dcm_cfg.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -710,7 +706,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>D:\4WD\ECUAL\dc_motor\dcm_interface.h</PathWithFileName>
+      <PathWithFileName>.\ECUAL\dc_motor\dcm_interface.h</PathWithFileName>
       <FilenameWithoutPath>dcm_interface.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -722,7 +718,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>D:\4WD\ECUAL\dc_motor\dcm_private.h</PathWithFileName>
+      <PathWithFileName>.\ECUAL\dc_motor\dcm_private.h</PathWithFileName>
       <FilenameWithoutPath>dcm_private.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>

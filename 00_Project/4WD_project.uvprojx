@@ -565,27 +565,27 @@
             <File>
               <FileName>dc_motor_prog.c</FileName>
               <FileType>1</FileType>
-              <FilePath>D:\4WD\ECUAL\dc_motor\dc_motor_prog.c</FilePath>
+              <FilePath>.\ECUAL\dc_motor\dc_motor_prog.c</FilePath>
             </File>
             <File>
               <FileName>dcm_cfg.c</FileName>
               <FileType>1</FileType>
-              <FilePath>D:\4WD\ECUAL\dc_motor\dcm_cfg.c</FilePath>
+              <FilePath>.\ECUAL\dc_motor\dcm_cfg.c</FilePath>
             </File>
             <File>
               <FileName>dcm_cfg.h</FileName>
               <FileType>5</FileType>
-              <FilePath>D:\4WD\ECUAL\dc_motor\dcm_cfg.h</FilePath>
+              <FilePath>.\ECUAL\dc_motor\dcm_cfg.h</FilePath>
             </File>
             <File>
               <FileName>dcm_interface.h</FileName>
               <FileType>5</FileType>
-              <FilePath>D:\4WD\ECUAL\dc_motor\dcm_interface.h</FilePath>
+              <FilePath>.\ECUAL\dc_motor\dcm_interface.h</FilePath>
             </File>
             <File>
               <FileName>dcm_private.h</FileName>
               <FileType>5</FileType>
-              <FilePath>D:\4WD\ECUAL\dc_motor\dcm_private.h</FilePath>
+              <FilePath>.\ECUAL\dc_motor\dcm_private.h</FilePath>
             </File>
           </Files>
         </Group>
