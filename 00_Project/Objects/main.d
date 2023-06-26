@@ -22,3 +22,5 @@
 .\objects\main.o: .\MCAL\gpt\gpt_interface.h
 .\objects\main.o: .\ECUAL\pwm\pwm_interface.h
 .\objects\main.o: .\ECUAL\pwm\pwm_cfg.h
+.\objects\main.o: .\ECUAL\dc_motor\dcm_interface.h
+.\objects\main.o: .\ECUAL\dc_motor\dcm_cfg.h

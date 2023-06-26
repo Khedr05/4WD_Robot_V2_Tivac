@@ -25,7 +25,7 @@ void app_init(void)
 	LED_initialize(&a_ledCfgPins[1]);
 	LED_initialize(&a_ledCfgPins[2]);
 	HANDLER_init(&str_gl_timer);
-	//INIT MOTORS -->INIT PWM
+	DCM_init(str_g_carMotors);
 }
 void app_start(void)
 {
@@ -186,31 +186,37 @@ void Led_forward_short_side(void)
 void car_forward_long(void)
 {
 	// MOTOR MOVE FORWARD WITH 50 % SPEED FOR 3 SEC
+	DCM_MoveForward(50);
 	Led_forward_long_side();
 	HANDLER_start_timer(str_gl_timer.enu_GPT_timer_select,TIMER_ASYNC,3,TIME_IN_SECONDS);
 }
 void car_forward_short(void)
 {
-	Led_forward_short_side();
 	// MOTOR MOVE FORWARD WITH 30 % SPEED FOR 2 SEC
-		HANDLER_start_timer(str_gl_timer.enu_GPT_timer_select,TIMER_ASYNC,2,TIME_IN_SECONDS);
+	DCM_MoveForward(30);
+	Led_forward_short_side();
+	HANDLER_start_timer(str_gl_timer.enu_GPT_timer_select,TIMER_ASYNC,2,TIME_IN_SECONDS);
 }
 void car_stop(void)
 {
-	Led_stop();
 	// STOP MOTOR 0.5 SECOND
+	DCM_stopMotor(str_g_carMotors,MOTOR_RIGHT);
+	DCM_stopMotor(str_g_carMotors,MOTOR_LEFT);
+	Led_stop();
 	HANDLER_start_timer(str_gl_timer.enu_GPT_timer_select,TIMER_ASYNC,500,TIME_IN_MILLIOSECONDS);
 }
 void car_rotate(void)
 {
-	Led_rotate();
 	// ROTATE 90 DEGREE RIGHT 
-	HANDLER_start_timer(str_gl_timer.enu_GPT_timer_select,TIMER_ASYNC,500,TIME_IN_MILLIOSECONDS);
+	DCM_rotateDCM(MOTOR_RIGHT);
+	Led_rotate();
+	HANDLER_start_timer(str_gl_timer.enu_GPT_timer_select,TIMER_ASYNC,620,TIME_IN_MILLIOSECONDS);
 }
 
 
 void stopSystem(void)
 {
+	car_stop();
 	bool_gl_idle_stop = TRUE;
 	enu_gl_car_state  = IDLE;
 }

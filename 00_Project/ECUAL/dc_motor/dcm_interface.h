@@ -55,7 +55,7 @@ typedef enum
 	DCM_HIGH, /** Defines digital state power */
 }enu_led_state_t;
 
-extern const str_dcm_confige_t ST_g_carMotors[2];
+extern str_dcm_confige_t str_g_carMotors[4];
 
 /*******************************************************************************************************************************************************************/
 /* DCM Functions' Prototypes */
@@ -75,11 +75,11 @@ enu_dcm_error_t DCM_u8SetDutyCycleOfPWM(Uint8_t DCM_a_dutyCycleValue);
 void DCM_updateStopFlag(void);
 /****************************************************************************************************************************************/
 /* you need to specify which motor you want to rotate*/
-enu_dcm_error_t DCM_rotateDCM(enu_dcm_motor_side_t DCM_l_motorNumber, Uint16_t DCM_a_rotateSpeed);
+enu_dcm_error_t DCM_rotateDCM(enu_dcm_motor_side_t DCM_l_motorNumber);
 
 /****************************************************************************************************************************************/
 
-void DCM_MoveForward(Uint8_t u8_a_speed);
+enu_dcm_error_t DCM_MoveForward(Uint8_t u8_a_speed);
 
 enu_dcm_error_t DCM_MoveBackward(Uint8_t u8_a_speed);
 

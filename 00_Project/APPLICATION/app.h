@@ -8,12 +8,10 @@
 #include "push_button_interface.h"
 #include "htimer_interface.h"
 #include "pwm_interface.h"
+#include "dcm_interface.h"
 
 extern  ST_PUSH_BTN_pinCfg_t a_pushBtnCfgPins[PUSH_BTN_PIN_CFG_ARRAY_SIZE] ;
 extern  ST_led_pinCfg_t a_ledCfgPins[LED_PIN_CFG_ARRAY_SIZE] ;
-//include motor
-
-
 
 #define FIRST_STOP    1
 #define ROTATEING     2
