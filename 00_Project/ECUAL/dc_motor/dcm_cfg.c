@@ -23,8 +23,8 @@ str_dcm_confige_t str_g_carMotors[4] =
 
 	{
 		{
-		  .pinMode				  =		 GPIO_MODE_GPIO,
-		  .currentLevel			=		 GPIO_CUR_2MA,
+		  .pinMode				  =		 GPIO_MODE_DIGITAL,
+		  .currentLevel			=		 GPIO_CUR_8MA,
 		  .pinDirection			=		 GPIO_DIR_OUTPUT,
 		  .pinLogic				  =		 GPIO_LOGIC_LOW,
 		  .portNumber       =		 GPIO_PORTE ,
@@ -40,8 +40,8 @@ str_dcm_confige_t str_g_carMotors[4] =
 
 	{
 		{
-		  .pinMode				=		 GPIO_MODE_GPIO,
-		  .currentLevel			=		 GPIO_CUR_2MA,
+		  .pinMode				=		 GPIO_MODE_DIGITAL,
+		  .currentLevel			=		 GPIO_CUR_8MA,
 		  .pinDirection			=		 GPIO_DIR_OUTPUT,
 		  .pinLogic				=		 GPIO_LOGIC_LOW,
 		  .portNumber			=		 GPIO_PORTE ,
@@ -57,8 +57,8 @@ str_dcm_confige_t str_g_carMotors[4] =
 
 	{
 		{
-		  .pinMode				=		 GPIO_MODE_GPIO,
-		  .currentLevel			=		 GPIO_CUR_2MA,
+		  .pinMode				=		 GPIO_MODE_DIGITAL,
+		  .currentLevel			=		 GPIO_CUR_8MA,
 		  .pinDirection			=		 GPIO_DIR_OUTPUT,
 		  .pinLogic				=		 GPIO_LOGIC_LOW,
 		  .portNumber			=		 GPIO_PORTE ,
@@ -74,8 +74,8 @@ str_dcm_confige_t str_g_carMotors[4] =
 
 	{
 		{
-		  .pinMode				=		 GPIO_MODE_GPIO,
-		  .currentLevel			=		 GPIO_CUR_2MA,
+		  .pinMode				=		 GPIO_MODE_DIGITAL,
+		  .currentLevel			=		 GPIO_CUR_8MA,
 		  .pinDirection			=		 GPIO_DIR_OUTPUT,
 		  .pinLogic				=		 GPIO_LOGIC_LOW,
 		  .portNumber			=		 GPIO_PORTE ,
