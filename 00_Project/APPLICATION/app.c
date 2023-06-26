@@ -1,9 +1,13 @@
 #include "app.h"
 
-boolean           bool_gl_is_start   = FALSE;
-boolean           bool_gl_is_timeOut = FALSE;
-boolean           bool_gl_lock_state = FALSE;
-enu_car_states_t  enu_gl_car_state   = IDLE ;
+uint8_t           u8_gl_stop_or_rotate = FALSE;
+boolean           bool_gl_is_timeOut   = FALSE;
+boolean           bool_gl_lock_state   = FALSE;
+boolean           bool_gl_idle_stop    = FALSE;
+enu_car_states_t  enu_gl_car_state     = IDLE ;
+
+
+
 str_GPT_configs_t str_gl_timer       =
 {
 	.enu_GPT_timer_select   = GPT_TIMER0_SELECT,
@@ -12,6 +16,7 @@ str_GPT_configs_t str_gl_timer       =
 	.bool_use_interrupt     = TRUE,
 	.ptrf_call_back         = timeOut
 };
+
 void app_init(void)
 {
 	PUSH_BTN_intialize(&a_pushBtnCfgPins[0],stopSystem);
@@ -24,67 +29,104 @@ void app_init(void)
 }
 void app_start(void)
 {
+	
 	if(enu_gl_car_state == IDLE)
 	{
-		read_start_btn();
-	}
-	else if (enu_gl_car_state == FORWARD_LONG_SIDE)
-	{
-		if (bool_gl_is_start == FALSE)
+		if(bool_gl_idle_stop == TRUE)
 		{
-			Led_stop();
-	    HANDLER_start_timer(str_gl_timer.enu_GPT_timer_select,TIMER_SYNC,1000,TIME_IN_MILLIOSECONDS);
-			bool_gl_is_start = TRUE;
+			 Led_stop();
+			 bool_gl_idle_stop = FALSE;
 		}
 		else
 		{
 			// do nothing
 		}
-		if(bool_gl_lock_state == FALSE)
+		read_start_btn();
+	}
+	else if (enu_gl_car_state == FORWARD_LONG_SIDE)
+	{
+		if((bool_gl_lock_state == FALSE) && (bool_gl_is_timeOut == TRUE))
 		{
 			car_forward_long(); 
-			bool_gl_lock_state = TRUE;
+			u8_gl_stop_or_rotate = FIRST_STOP;
+			bool_gl_lock_state   = TRUE;
+			bool_gl_is_timeOut   = FALSE ;
 		}
-		else if (bool_gl_is_timeOut == TRUE)
+		else if ((bool_gl_is_timeOut == TRUE) && (u8_gl_stop_or_rotate == FIRST_STOP))
 		{
 			car_stop();
-			car_rotate();
-			car_stop();
-			enu_gl_car_state = FORWARD_SHORT_SIDE;
-			bool_gl_lock_state = FALSE;
-			bool_gl_is_timeOut = FALSE;
+			u8_gl_stop_or_rotate = ROTATEING;
+			bool_gl_is_timeOut   = FALSE;
+			
 		}
-		else
+		else if ((bool_gl_is_timeOut == TRUE) && (u8_gl_stop_or_rotate == ROTATEING))
     {
-			//do nothing
+			car_rotate();
+			u8_gl_stop_or_rotate = SECOND_STOP;
+			bool_gl_is_timeOut   = FALSE;
     }
+		else if ((bool_gl_is_timeOut == TRUE) && (u8_gl_stop_or_rotate == SECOND_STOP))
+    {
+			car_stop();
+			u8_gl_stop_or_rotate = FALSE;
+			bool_gl_is_timeOut   = FALSE;
+			  
+    }
+		else if ((bool_gl_is_timeOut == TRUE) && (u8_gl_stop_or_rotate == FALSE))
+    {
+		  enu_gl_car_state = FORWARD_SHORT_SIDE;
+			bool_gl_lock_state = FALSE;
+    }
+		else
+		{
+			// do nothing
+		}
 		
 	}
 	else if (enu_gl_car_state == FORWARD_SHORT_SIDE)
 	{
-		if(bool_gl_lock_state == FALSE)
+		if((bool_gl_lock_state == FALSE) && (bool_gl_is_timeOut == TRUE))
 		{
 			car_forward_short(); 
-			bool_gl_lock_state = TRUE;
+			u8_gl_stop_or_rotate = FIRST_STOP;
+			bool_gl_lock_state   = TRUE;
+			bool_gl_is_timeOut   = FALSE ;
 		}
-		else if (bool_gl_is_timeOut == TRUE)
+		else if ((bool_gl_is_timeOut == TRUE) && (u8_gl_stop_or_rotate == FIRST_STOP))
 		{
 			car_stop();
-			car_rotate();
-			car_stop();
-			enu_gl_car_state = FORWARD_LONG_SIDE;
-			bool_gl_lock_state = FALSE;
-			bool_gl_is_timeOut = FALSE;
+			u8_gl_stop_or_rotate = ROTATEING;
+			bool_gl_is_timeOut   = FALSE;
+			
 		}
-		else
+		else if ((bool_gl_is_timeOut == TRUE) && (u8_gl_stop_or_rotate == ROTATEING))
     {
-			//do nothing
+			car_rotate();
+			u8_gl_stop_or_rotate = SECOND_STOP;
+			bool_gl_is_timeOut   = FALSE;
     }
+		else if ((bool_gl_is_timeOut == TRUE) && (u8_gl_stop_or_rotate == SECOND_STOP))
+    {
+			car_stop();
+			u8_gl_stop_or_rotate = FALSE;
+			bool_gl_is_timeOut   = FALSE;
+			  
+    }
+		else if ((bool_gl_is_timeOut == TRUE) && (u8_gl_stop_or_rotate == FALSE))
+    {
+		  enu_gl_car_state = FORWARD_LONG_SIDE;
+			bool_gl_lock_state = FALSE;
+    }
+		else
+		{
+			// do nothing
+		}
 	}
 	else
 	{
 		// do nothing
 	}	
+	
 }
 
 
@@ -100,7 +142,12 @@ void read_start_btn(void)
 	PUSH_BTN_read_state(&a_pushBtnCfgPins[1],&ENU_PUSH_BTN_state);
 	if( ENU_PUSH_BTN_state == PUSH_BTN_STATE_PRESSED)
 	{
+		// for handling debouncing
 		HANDLER_start_timer(str_gl_timer.enu_GPT_timer_select,TIMER_SYNC,200,TIME_IN_MILLIOSECONDS);
+		
+		// first stop one second after pressing start
+		Led_stop();
+	  HANDLER_start_timer(str_gl_timer.enu_GPT_timer_select,TIMER_ASYNC,1,TIME_IN_SECONDS);
 		enu_gl_car_state = FORWARD_LONG_SIDE;
 	}
 	else
@@ -125,7 +172,7 @@ void Led_rotate(void)
 void Led_stop(void)
 {
 	LED_turnOn(&a_ledCfgPins[2]);
-	LED_turnOff(&a_ledCfgPins[1]);
+	LED_turnOff(&a_ledCfgPins[0]);
 	LED_turnOff(&a_ledCfgPins[1]);
 }
 void Led_forward_short_side(void)
@@ -152,20 +199,20 @@ void car_stop(void)
 {
 	Led_stop();
 	// STOP MOTOR 0.5 SECOND
-	HANDLER_start_timer(str_gl_timer.enu_GPT_timer_select,TIMER_SYNC,500,TIME_IN_MILLIOSECONDS);
+	HANDLER_start_timer(str_gl_timer.enu_GPT_timer_select,TIMER_ASYNC,500,TIME_IN_MILLIOSECONDS);
 }
 void car_rotate(void)
 {
 	Led_rotate();
 	// ROTATE 90 DEGREE RIGHT 
-	HANDLER_start_timer(str_gl_timer.enu_GPT_timer_select,TIMER_SYNC,500,TIME_IN_MILLIOSECONDS);
+	HANDLER_start_timer(str_gl_timer.enu_GPT_timer_select,TIMER_ASYNC,500,TIME_IN_MILLIOSECONDS);
 }
 
 
 void stopSystem(void)
 {
-	Led_stop();
-	enu_gl_car_state = IDLE;
+	bool_gl_idle_stop = TRUE;
+	enu_gl_car_state  = IDLE;
 }
 
 

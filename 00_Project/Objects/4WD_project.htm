@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\4WD_project.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\4WD_project.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Sun Jun 25 23:57:51 2023
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Mon Jun 26 14:10:30 2023
 <BR><P>
 <H3>Maximum Stack Usage =        136 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1348,7 +1348,6 @@ Global Symbols
 <LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_rotate
 <LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_forward_short
 <LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_forward_long
-<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_start
 </UL>
 
 <P><STRONG><a name="[a2]"></a>LED_initialize</STRONG> (Thumb, 64 bytes, Stack size 40 bytes, led_prog.o(i.LED_initialize))
@@ -1415,7 +1414,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_turnOn
 <LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_turnOff
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stopSystem
+<BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_start_btn
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_stop
 <LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_start
 </UL>
@@ -1461,11 +1460,10 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[af]"></a>app_start</STRONG> (Thumb, 172 bytes, Stack size 8 bytes, app.o(i.app_start))
+<P><STRONG><a name="[af]"></a>app_start</STRONG> (Thumb, 378 bytes, Stack size 8 bytes, app.o(i.app_start))
 <BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = app_start &rArr; read_start_btn &rArr; HANDLER_start_timer &rArr; GPT_start_timer &rArr; __aeabi_d2uiz
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HANDLER_start_timer
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_start_btn
+<BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_start_btn
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_stop
 <LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_rotate
 <LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_forward_short
@@ -1520,20 +1518,17 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
-<P><STRONG><a name="[b0]"></a>read_start_btn</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, app.o(i.read_start_btn))
+<P><STRONG><a name="[b0]"></a>read_start_btn</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, app.o(i.read_start_btn))
 <BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = read_start_btn &rArr; HANDLER_start_timer &rArr; GPT_start_timer &rArr; __aeabi_d2uiz
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PUSH_BTN_read_state
 <LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HANDLER_start_timer
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_stop
 </UL>
 <BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_start
 </UL>
 
-<P><STRONG><a name="[7a]"></a>stopSystem</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, app.o(i.stopSystem))
-<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = stopSystem &rArr; Led_stop &rArr; LED_turnOn &rArr; GPIO_writeLogic
-</UL>
-<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_stop
-</UL>
+<P><STRONG><a name="[7a]"></a>stopSystem</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, app.o(i.stopSystem))
 <BR>[Address Reference Count : 1]<UL><LI> app.o(i.app_init)
 </UL>
 <P><STRONG><a name="[7b]"></a>timeOut</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, app.o(i.timeOut))

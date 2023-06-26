@@ -13,12 +13,19 @@ extern  ST_PUSH_BTN_pinCfg_t a_pushBtnCfgPins[PUSH_BTN_PIN_CFG_ARRAY_SIZE] ;
 extern  ST_led_pinCfg_t a_ledCfgPins[LED_PIN_CFG_ARRAY_SIZE] ;
 //include motor
 
+
+
+#define FIRST_STOP    1
+#define ROTATEING     2
+#define SECOND_STOP   3
 typedef enum 
 {
 	FORWARD_LONG_SIDE,
 	FORWARD_SHORT_SIDE,
 	IDLE
 }enu_car_states_t;
+
+
 
 void app_init              (void);
 void app_start             (void);
