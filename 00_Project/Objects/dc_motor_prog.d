@@ -1,8 +1,8 @@
-.\objects\dc_motor_prog.o: ECUAL\dc_motor\dc_motor_prog.c
-.\objects\dc_motor_prog.o: ECUAL\dc_motor\dcm_cfg.h
+.\objects\dc_motor_prog.o: D:\4WD\ECUAL\dc_motor\dc_motor_prog.c
+.\objects\dc_motor_prog.o: D:\4WD\ECUAL\dc_motor\dcm_cfg.h
 .\objects\dc_motor_prog.o: .\COMMON\std_types.h
 .\objects\dc_motor_prog.o: .\MCAL\gpio\gpio_config.h
-.\objects\dc_motor_prog.o: ECUAL\dc_motor\dcm_interface.h
+.\objects\dc_motor_prog.o: D:\4WD\ECUAL\dc_motor\dcm_interface.h
 .\objects\dc_motor_prog.o: .\COMMON\bit_math.h
 .\objects\dc_motor_prog.o: .\ECUAL\pwm\pwm_interface.h
 .\objects\dc_motor_prog.o: .\ECUAL\pwm\pwm_cfg.h
