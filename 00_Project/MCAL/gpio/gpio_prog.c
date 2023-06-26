@@ -36,7 +36,7 @@ ENU_GPIO_systemState_t GPIO_init(ST_dio_pinCfg_t  *arg_pincfg)
         if(GPIO_PORTE == arg_pincfg->portNumber)
         {
             /* check that the pin is less than the max number of PORTE pins*/
-            if(PORTE_MAX_PIN < arg_pincfg->pinNumber)
+            if(PORTE_MAX_PIN > arg_pincfg->pinNumber)
             {
                 /* Set Clock For The Port */
                 SET_BIT(RCGCGPIO_REG , arg_pincfg->portNumber);
@@ -54,10 +54,11 @@ ENU_GPIO_systemState_t GPIO_init(ST_dio_pinCfg_t  *arg_pincfg)
             ret = GPIO_PORTE_VALID_PIN;
         }
 
-					GPIOLOCK_REG(arg_pincfg->portNumber) = GPIO_LOCK_KEY;
-          GPIOCR_REG(arg_pincfg->portNumber) = GPIO_DUMP_LOCK_KEY;
+					
         if(GPIO_PORTE_VALID_PIN == ret)
         {
+						GPIOLOCK_REG(arg_pincfg->portNumber) = GPIO_LOCK_KEY;
+						GPIOCR_REG(arg_pincfg->portNumber) = GPIO_DUMP_LOCK_KEY;
             /* Set Pin Direction */
             if(GPIO_DIR_INPUT == arg_pincfg->pinDirection)
             {

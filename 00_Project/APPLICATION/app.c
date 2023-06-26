@@ -25,7 +25,7 @@ void app_init(void)
 	LED_initialize(&a_ledCfgPins[1]);
 	LED_initialize(&a_ledCfgPins[2]);
 	HANDLER_init(&str_gl_timer);
-	DCM_init(str_g_carMotors);
+  DCM_init(str_g_carMotors);
 }
 void app_start(void)
 {
@@ -186,7 +186,7 @@ void Led_forward_short_side(void)
 void car_forward_long(void)
 {
 	// MOTOR MOVE FORWARD WITH 50 % SPEED FOR 3 SEC
-	DCM_MoveForward(50);
+  DCM_MoveForward(50);
 	Led_forward_long_side();
 	HANDLER_start_timer(str_gl_timer.enu_GPT_timer_select,TIMER_ASYNC,3,TIME_IN_SECONDS);
 }

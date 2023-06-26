@@ -14,7 +14,7 @@
 
 #include "gpio_interface.h"
 
-#define MAX_PWM_PINS    4
+#define MAX_PWM_PINS    2
 
 typedef enum
 {
