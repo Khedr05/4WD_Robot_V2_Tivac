@@ -210,7 +210,7 @@ void car_rotate(void)
 	// ROTATE 90 DEGREE RIGHT 
 	DCM_rotateDCM(MOTOR_RIGHT);
 	Led_rotate();
-	HANDLER_start_timer(str_gl_timer.enu_GPT_timer_select,TIMER_ASYNC,620,TIME_IN_MILLIOSECONDS);
+	HANDLER_start_timer(str_gl_timer.enu_GPT_timer_select,TIMER_ASYNC,2000,TIME_IN_MILLIOSECONDS);
 }
 
 

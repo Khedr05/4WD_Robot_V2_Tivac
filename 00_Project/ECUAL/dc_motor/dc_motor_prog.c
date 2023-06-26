@@ -114,14 +114,7 @@ enu_dcm_error_t DCM_changeDCMDirection(str_dcm_confige_t *DCM_a_ptrToConfig, enu
 		{
 			
 			error_state = (enu_dcm_error_t) GPIO_toggleLogic( &DCM_a_ptrToConfig[dcm_loc_loopCounter].gpio_for_dcm_confige); 
-			if(error_state != DCM_OK)
-			{
-				error_state = DCM_WRONG;
-			}
-			else
-			{
-				//Do nothing
-			}
+			break;
 			
 		}
 	}
@@ -221,29 +214,22 @@ enu_dcm_error_t DCM_MoveForward(Uint8_t u8_a_speed)
 
 	uint8_t error_state = DCM_OK;
 	uint8_t dcm_loc_loopCounter = FALSE;
+DCM_u8SetDutyCycleOfPWM(u8_a_speed);
 	for( dcm_loc_loopCounter = FALSE ; dcm_loc_loopCounter < DCM_USED_PINS_NUM; dcm_loc_loopCounter++ )
 	{
 		if( ( dcm_loc_loopCounter % DCM_MAX_PIN_NUM ) == FALSE)
 		{
 			error_state = (enu_dcm_error_t) GPIO_writeLogic( &str_g_carMotors[dcm_loc_loopCounter].gpio_for_dcm_confige, GPIO_LOGIC_HIGH); 
+	
 		}
 		else
 		{
 			error_state = (enu_dcm_error_t) GPIO_writeLogic( &str_g_carMotors[dcm_loc_loopCounter].gpio_for_dcm_confige, GPIO_LOGIC_LOW); 
 		}			
 		
-		if(error_state != DCM_OK)
-		{
-			error_state = DCM_WRONG;
-			break;
-		}	
-		else
-		{
-			//Do Nothing
-		}
 	}	
 	//Call a PWM function to generate the desired pwm signal with the desired duty Cycle --> 
-	DCM_u8SetDutyCycleOfPWM(u8_a_speed);
+	
 	return (enu_dcm_error_t)error_state;
 
 }
@@ -265,16 +251,7 @@ enu_dcm_error_t DCM_MoveBackward(Uint8_t u8_a_speed)
 			error_state = (enu_dcm_error_t) GPIO_writeLogic( &str_g_carMotors[dcm_loc_loopCounter].gpio_for_dcm_confige, GPIO_LOGIC_HIGH); 
 		}			
 		
-		
-		if(error_state != DCM_OK)
-		{
-			error_state = DCM_WRONG;
-			break;
-		}	
-		else
-		{
-			//Do Nothing
-		}
+	
 	}
 	//Call a PWM function to generate the desired pwm signal with the desired duty Cycle -->
 	DCM_u8SetDutyCycleOfPWM(u8_a_speed);	

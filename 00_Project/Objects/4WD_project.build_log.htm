@@ -3,34 +3,81 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: µVision V5.38.0.0
-Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: sherif ashraf, sherifashraf, LIC=----
+IDE-Version: µVision V5.29.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Momen Hassan, Sprints, LIC=----
  
 Tool Versions:
-Toolchain:       MDK-Lite  Version: 5.38.0.0
-Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\bin\
-C Compiler:      ArmClang.exe V6.19
-Assembler:       Armasm.exe V6.19
-Linker/Locator:  ArmLink.exe V6.19
-Library Manager: ArmAr.exe V6.19
-Hex Converter:   FromElf.exe V6.19
-CPU DLL:         SARMCM3.DLL V5.38.0.0
-Dialog DLL:      DCM.DLL V1.17.5.0
+Toolchain:       MDK-Lite  Version: 5.29.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.29.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
 Target DLL:      lmidk-agdi.dll V???
-Dialog DLL:      TCM.DLL V1.56.4.0
+Dialog DLL:      TCM.DLL V1.36.5.0
  
 <h2>Project:</h2>
-D:\Programing\Embedded System Diploma\Sprints\sprints_github\4WD_Robot_V2_Tivac\00_Project\4WD_project.uvprojx
+C:\Users\Speed\Desktop\4WD_Robot_V2_Tivac\00_Project\4WD_project.uvprojx
 Project File Date:  06/26/2023
 
 <h2>Output:</h2>
-*** Target 'Target 1' uses ARM-Compiler 'Default Compiler Version 5' which is not available.
-*** Please review the installed ARM Compiler Versions:
-   'Manage Project Items - Folders/Extensions' to manage ARM Compiler Versions.
-   'Options for Target - Target' to select an ARM Compiler Version for the target.
-*** Build aborted.
-Build Time Elapsed:  00:00:00
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling htimer_program.c...
+compiling gpio_config.c...
+compiling pwm_prog.c...
+compiling main.c...
+compiling app.c...
+compiling pwm_cfg.c...
+compiling gpt_program.c...
+compiling gpio_prog.c...
+compiling led_config.c...
+compiling dcm_cfg.c...
+compiling push_button_prog.c...
+compiling led_prog.c...
+compiling dc_motor_prog.c...
+ECUAL\dc_motor\dc_motor_prog.c(113): warning:  #174-D: expression has no effect
+  		for( dcm_loc_loopCounter ; dcm_loc_loopCounter < (DCM_MAX_PIN_NUM + (DCM_a_motorNum * DCM_MAX_PIN_NUM)); dcm_loc_loopCounter++)
+ECUAL\dc_motor\dc_motor_prog.c: 1 warning, 0 errors
+compiling push_button_cfg.c...
+assembling startup_TM4C123.s...
+compiling system_TM4C123.c...
+linking...
+Program Size: Code=9840 RO-data=792 RW-data=192 ZI-data=856  
+".\Objects\4WD_project.axf" - 0 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil.TM4C_DFP.1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Users\Speed\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include
+  C:\Users\Speed\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:1.0.1
+      Source file:   Device\Source\ARM\startup_TM4C123.s
+      Source file:   Device\Source\system_TM4C123.c
+      Include file:  Device\Include\TM4C123\TM4C123.h
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

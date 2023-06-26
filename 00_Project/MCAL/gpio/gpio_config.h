@@ -10,7 +10,7 @@
 
 
 
-#define PINS_CFG_ARRAY_SIZE     5
+#define PINS_CFG_ARRAY_SIZE     7
 #define PORTE_MAX_PIN           6
 #define INTERRUPT_PIN_FIRED     1
 
