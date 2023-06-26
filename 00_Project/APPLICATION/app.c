@@ -39,7 +39,7 @@ void app_start(void)
 		}
 		else
 		{
-			// do nothing
+			// do nothin
 		}
 		read_start_btn();
 	}
