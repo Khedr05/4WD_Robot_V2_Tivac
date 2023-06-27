@@ -20,7 +20,7 @@
         [Google Doc](https://docs.google.com/document/d/1IRe-8jyH7wxBTIzXYDLSMfOx0oQpCD-H/edit#heading=h.jicq1xxnfydk)
         [PDF]()
 > - `Team Backlog` 
-        [Google Sheets]() 
+        [Google Sheets](https://docs.google.com/spreadsheets/d/1KqM43krTIfqdNmvoGyEEz4QNa8kiRKZ9E0DTX5FQSQ4/edit#gid=0) 
         [PDF]()
 > - `Test Protocol` 
       [Google Sheets]() 
