@@ -1,5 +1,4 @@
 # 4WD_Robot_V2_Tivac
-# Obstacle_Avoidance_Robot
 ![WhatsApp Image 2023-05-20 at 14 05 24](https://github.com/sherifkhadr/SPRINTS_Obstacle_Car_Avoidance/assets/60091384/95f43bdf-e554-47d3-b05d-6b227aefff78)
 
 
