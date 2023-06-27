@@ -21,7 +21,7 @@
         [PDF]()
 > - `Team Backlog` 
         [Google Sheets](https://docs.google.com/spreadsheets/d/1KqM43krTIfqdNmvoGyEEz4QNa8kiRKZ9E0DTX5FQSQ4/edit#gid=0) 
-        [PDF]()
+        [PDF](https://drive.google.com/drive/folders/1CXbXtSQmKKQIm5jPsotvxY5uF6XswF_j)
 > - `Test Protocol` 
       [Google Sheets]() 
       [PDF]()
