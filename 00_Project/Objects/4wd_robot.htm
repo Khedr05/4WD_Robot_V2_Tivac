@@ -3,9 +3,9 @@
 <title>Static Call Graph - [.\Objects\4wd_robot.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\4wd_robot.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6190004: Last Updated: Tue Jun 27 23:52:18 2023
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6130100: Last Updated: Wed Jun 28 17:04:02 2023
 <BR><P>
-<H3>Maximum Stack Usage =        476 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =        500 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
 __rt_entry_main &rArr; main &rArr; app_init &rArr; PUSH_BTN_intialize &rArr; GPIO_init &rArr; GPIO_interruptPortEnable &rArr; __NVIC_EnableIRQ
 <P>
@@ -260,8 +260,8 @@ Function Pointers
 Global Symbols
 </H3>
 <P><STRONG><a name="[77]"></a>__main</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, __main.o(!!!main))
-<BR><BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+<BR><BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_tm4c123.o(.text)
 </UL>
@@ -273,9 +273,9 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
 </UL>
 
-<P><STRONG><a name="[bf]"></a>__scatterload_rt2_thumb_only</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<P><STRONG><a name="[c9]"></a>__scatterload_rt2_thumb_only</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
 
-<P><STRONG><a name="[c0]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<P><STRONG><a name="[ca]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
 
 <P><STRONG><a name="[7f]"></a>__scatterload_copy</STRONG> (Thumb, 26 bytes, Stack size unknown bytes, __scatter_copy.o(!!handler_copy), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
@@ -283,118 +283,131 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
 </UL>
 
-<P><STRONG><a name="[c1]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
+<P><STRONG><a name="[cb]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
 
-<P><STRONG><a name="[85]"></a>__rt_lib_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit.o(.ARM.Collect$$libinit$$00000000))
-<BR><BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_li
+<P><STRONG><a name="[87]"></a>__rt_lib_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit.o(.ARM.Collect$$libinit$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_li
 </UL>
 
 <P><STRONG><a name="[80]"></a>__rt_lib_init_fp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000001))
 <BR><BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_init
 </UL>
 
-<P><STRONG><a name="[c2]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000030))
-
-<P><STRONG><a name="[c3]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
-
-<P><STRONG><a name="[c4]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
-
-<P><STRONG><a name="[c5]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000023))
-
-<P><STRONG><a name="[c6]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000034))
-
-<P><STRONG><a name="[c7]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000032))
-
-<P><STRONG><a name="[c8]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
-
-<P><STRONG><a name="[c9]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000025))
-
-<P><STRONG><a name="[ca]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000C))
-
-<P><STRONG><a name="[cb]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
-
-<P><STRONG><a name="[cc]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
-
-<P><STRONG><a name="[cd]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
-
-<P><STRONG><a name="[ce]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
-
-<P><STRONG><a name="[cf]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
-
-<P><STRONG><a name="[d0]"></a>__rt_lib_init_preinit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000006))
-
-<P><STRONG><a name="[d1]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000010))
-
-<P><STRONG><a name="[d2]"></a>__rt_lib_init_relocate_pie_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000004))
-
-<P><STRONG><a name="[d3]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000035))
-
-<P><STRONG><a name="[d4]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
-
-<P><STRONG><a name="[d5]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000027))
-
-<P><STRONG><a name="[d6]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000E))
-
-<P><STRONG><a name="[8a]"></a>__rt_lib_shutdown</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown.o(.ARM.Collect$$libshutdown$$00000000))
-<BR><BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_ls
+<P><STRONG><a name="[82]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000027))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96 + Unknown Stack Size
+<LI>Call Chain = __rt_lib_init_argv_1 &rArr; __ARM_argv_veneer &rArr; __ARM_get_argv &rArr; __rt_SIGRTMEM &rArr; __rt_SIGRTMEM_inner &rArr; __default_signal_display &rArr; _ttywrch
+</UL>
+<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_argv_veneer
 </UL>
 
-<P><STRONG><a name="[d7]"></a>__rt_lib_shutdown_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000002))
+<P><STRONG><a name="[cc]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
 
-<P><STRONG><a name="[d8]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000007))
+<P><STRONG><a name="[cd]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
 
-<P><STRONG><a name="[d9]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F))
+<P><STRONG><a name="[ce]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
 
-<P><STRONG><a name="[da]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000010))
+<P><STRONG><a name="[cf]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000023))
 
-<P><STRONG><a name="[db]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A))
+<P><STRONG><a name="[d0]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
 
-<P><STRONG><a name="[dc]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000004))
+<P><STRONG><a name="[d1]"></a>__rt_lib_init_heapregion_libspace_used</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000027))
 
-<P><STRONG><a name="[dd]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C))
+<P><STRONG><a name="[d2]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
+
+<P><STRONG><a name="[d3]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
+
+<P><STRONG><a name="[d4]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
+
+<P><STRONG><a name="[d5]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
+
+<P><STRONG><a name="[d6]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
+
+<P><STRONG><a name="[d7]"></a>__rt_lib_init_preinit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000004))
+
+<P><STRONG><a name="[d8]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000E))
+
+<P><STRONG><a name="[d9]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
+
+<P><STRONG><a name="[da]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000025))
+
+<P><STRONG><a name="[db]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000C))
+
+<P><STRONG><a name="[dc]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
+
+<P><STRONG><a name="[dd]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000032))
+
+<P><STRONG><a name="[de]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000030))
+
+<P><STRONG><a name="[df]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000033))
+
+<P><STRONG><a name="[8c]"></a>__rt_lib_shutdown</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown.o(.ARM.Collect$$libshutdown$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_ls
+</UL>
+
+<P><STRONG><a name="[e0]"></a>__rt_lib_shutdown_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000002))
+
+<P><STRONG><a name="[e1]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000007))
+
+<P><STRONG><a name="[e2]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F))
+
+<P><STRONG><a name="[e3]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000010))
+
+<P><STRONG><a name="[e4]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A))
+
+<P><STRONG><a name="[e5]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000004))
+
+<P><STRONG><a name="[e6]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C))
 
 <P><STRONG><a name="[7d]"></a>__rt_entry</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry.o(.ARM.Collect$$rtentry$$00000000))
-<BR><BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
-<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+<BR><BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
 </UL>
 
-<P><STRONG><a name="[de]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000002))
+<P><STRONG><a name="[e7]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000002))
 
-<P><STRONG><a name="[82]"></a>__rt_entry_sh</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry4.o(.ARM.Collect$$rtentry$$00000004))
+<P><STRONG><a name="[84]"></a>__rt_entry_sh</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry4.o(.ARM.Collect$$rtentry$$00000004))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
 <LI>Call Chain = __rt_entry_sh &rArr; __user_setup_stackheap
 </UL>
-<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+<BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
 </UL>
 
-<P><STRONG><a name="[84]"></a>__rt_entry_li</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000A))
-<BR><BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init
+<P><STRONG><a name="[86]"></a>__rt_entry_li</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000A))
+<BR><BR>[Calls]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init
 </UL>
 
-<P><STRONG><a name="[df]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
+<P><STRONG><a name="[e8]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
 
-<P><STRONG><a name="[86]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
-<BR><BR>[Stack]<UL><LI>Max Depth = 476 + Unknown Stack Size
+<P><STRONG><a name="[88]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
+<BR><BR>[Stack]<UL><LI>Max Depth = 500 + Unknown Stack Size
 <LI>Call Chain = __rt_entry_main &rArr; main &rArr; app_init &rArr; PUSH_BTN_intialize &rArr; GPIO_init &rArr; GPIO_interruptPortEnable &rArr; __NVIC_EnableIRQ
 </UL>
-<BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
 </UL>
 
-<P><STRONG><a name="[e0]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
+<P><STRONG><a name="[e9]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
 
-<P><STRONG><a name="[8e]"></a>__rt_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
-<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
+<P><STRONG><a name="[91]"></a>__rt_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
 </UL>
 
-<P><STRONG><a name="[89]"></a>__rt_exit_ls</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000003))
-<BR><BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown
+<P><STRONG><a name="[8b]"></a>__rt_exit_ls</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000003))
+<BR><BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown
 </UL>
 
-<P><STRONG><a name="[e1]"></a>__rt_exit_prels_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
+<P><STRONG><a name="[ea]"></a>__rt_exit_prels_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
 
-<P><STRONG><a name="[8b]"></a>__rt_exit_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000004))
-<BR><BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
+<P><STRONG><a name="[8d]"></a>__rt_exit_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
+</UL>
+
+<P><STRONG><a name="[83]"></a>__ARM_argv_veneer</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, argv_veneer.o(.emb_text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = __ARM_argv_veneer &rArr; __ARM_get_argv &rArr; __rt_SIGRTMEM &rArr; __rt_SIGRTMEM_inner &rArr; __default_signal_display &rArr; _ttywrch
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_get_argv
+</UL>
+<BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init_argv_1
 </UL>
 
 <P><STRONG><a name="[0]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_tm4c123.o(.text))
@@ -1157,346 +1170,405 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> startup_tm4c123.o(RESET)
 </UL>
 <P><STRONG><a name="[7b]"></a>__user_initial_stackheap</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup_tm4c123.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+<BR><BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
 </UL>
 
-<P><STRONG><a name="[e2]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+<P><STRONG><a name="[eb]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
 
-<P><STRONG><a name="[e3]"></a>__rt_heap_escrow$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+<P><STRONG><a name="[ec]"></a>__rt_heap_escrow$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
 
-<P><STRONG><a name="[e4]"></a>__rt_heap_expand$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+<P><STRONG><a name="[ed]"></a>__rt_heap_expand$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
 
-<P><STRONG><a name="[83]"></a>__user_setup_stackheap</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, sys_stackheap_outer.o(.text))
+<P><STRONG><a name="[85]"></a>__user_setup_stackheap</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, sys_stackheap_outer.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
 <LI>Call Chain = __user_setup_stackheap
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_perproc_libspace
-<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_initial_stackheap
+<BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_initial_stackheap
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_perproc_libspace
 </UL>
-<BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_sh
+<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_sh
 </UL>
 
-<P><STRONG><a name="[88]"></a>exit</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, exit.o(.text))
+<P><STRONG><a name="[8a]"></a>exit</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, exit.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
 <LI>Call Chain = exit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit
+<BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
-</UL>
-
-<P><STRONG><a name="[e5]"></a>__user_libspace</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
-
-<P><STRONG><a name="[8d]"></a>__user_perproc_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+<BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
-<P><STRONG><a name="[e6]"></a>__user_perthread_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+<P><STRONG><a name="[ee]"></a>__user_libspace</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
 
-<P><STRONG><a name="[8c]"></a>_sys_exit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, sys_exit.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_exit
+<P><STRONG><a name="[90]"></a>__user_perproc_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
 </UL>
 
-<P><STRONG><a name="[e7]"></a>__I$use$semihosting</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+<P><STRONG><a name="[ef]"></a>__user_perthread_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
 
-<P><STRONG><a name="[e8]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
-
-<P><STRONG><a name="[e9]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, indicate_semi.o(.text), UNUSED)
-
-<P><STRONG><a name="[8f]"></a>DCM_MoveForward</STRONG> (Thumb, 142 bytes, Stack size 16 bytes, dc_motor_prog.o(.text.DCM_MoveForward))
-<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = DCM_MoveForward &rArr; DCM_u8SetDutyCycleOfPWM &rArr; PWM_set_Duty &rArr; GPT_start_timer &rArr; __aeabi_d2uiz
-</UL>
-<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_u8SetDutyCycleOfPWM
-<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_writeLogic
-</UL>
-<BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_forward_short
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_forward_long
+<P><STRONG><a name="[8e]"></a>_sys_exit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, sys_exit.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sig_exit
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_exit
 </UL>
 
-<P><STRONG><a name="[92]"></a>DCM_changeDCMDirection</STRONG> (Thumb, 94 bytes, Stack size 16 bytes, dc_motor_prog.o(.text.DCM_changeDCMDirection))
+<P><STRONG><a name="[92]"></a>__argv_alloc</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, _get_argv_nomalloc.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_get_argv
+</UL>
+
+<P><STRONG><a name="[8f]"></a>__ARM_get_argv</STRONG> (Thumb, 268 bytes, Stack size 56 bytes, _get_argv_nomalloc.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = __ARM_get_argv &rArr; __rt_SIGRTMEM &rArr; __rt_SIGRTMEM_inner &rArr; __default_signal_display &rArr; _ttywrch
+</UL>
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_command_string
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__argv_alloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_argv_veneer
+</UL>
+
+<P><STRONG><a name="[94]"></a>_sys_command_string</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, sys_command.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = _sys_command_string
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_get_argv
+</UL>
+
+<P><STRONG><a name="[f0]"></a>__I$use$semihosting</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+
+<P><STRONG><a name="[f1]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+
+<P><STRONG><a name="[f2]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, indicate_semi.o(.text), UNUSED)
+
+<P><STRONG><a name="[f3]"></a>__use_no_heap_region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, hrguard.o(.text), UNUSED)
+
+<P><STRONG><a name="[f4]"></a>__heap_region$guard</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, hrguard.o(.text), UNUSED)
+
+<P><STRONG><a name="[93]"></a>__rt_SIGRTMEM</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, defsig_rtmem_outer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = __rt_SIGRTMEM &rArr; __rt_SIGRTMEM_inner &rArr; __default_signal_display &rArr; _ttywrch
+</UL>
+<BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM_inner
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_get_argv
+</UL>
+
+<P><STRONG><a name="[96]"></a>__sig_exit</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, defsig_exit.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
+</UL>
+
+<P><STRONG><a name="[95]"></a>__rt_SIGRTMEM_inner</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, defsig_rtmem_inner.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __rt_SIGRTMEM_inner &rArr; __default_signal_display &rArr; _ttywrch
+</UL>
+<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__default_signal_display
+</UL>
+<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM
+</UL>
+
+<P><STRONG><a name="[97]"></a>__default_signal_display</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, defsig_general.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __default_signal_display &rArr; _ttywrch
+</UL>
+<BR>[Calls]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ttywrch
+</UL>
+<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM_inner
+</UL>
+
+<P><STRONG><a name="[98]"></a>_ttywrch</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, sys_wrch.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = _ttywrch
+</UL>
+<BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__default_signal_display
+</UL>
+
+<P><STRONG><a name="[99]"></a>DCM_MoveForward</STRONG> (Thumb, 150 bytes, Stack size 24 bytes, dc_motor_prog.o(.text.DCM_MoveForward))
+<BR><BR>[Stack]<UL><LI>Max Depth = 192<LI>Call Chain = DCM_MoveForward &rArr; DCM_u8SetDutyCycleOfPWM &rArr; PWM_set_Duty &rArr; GPT_start_timer &rArr; __aeabi_d2uiz
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_u8SetDutyCycleOfPWM
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_writeLogic
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_forward_short
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_forward_long
+</UL>
+
+<P><STRONG><a name="[9c]"></a>DCM_changeDCMDirection</STRONG> (Thumb, 98 bytes, Stack size 16 bytes, dc_motor_prog.o(.text.DCM_changeDCMDirection))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = DCM_changeDCMDirection &rArr; GPIO_toggleLogic
 </UL>
-<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_toggleLogic
+<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_toggleLogic
 </UL>
-<BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_rotateDCM
+<BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_rotateDCM
 </UL>
 
-<P><STRONG><a name="[94]"></a>DCM_init</STRONG> (Thumb, 134 bytes, Stack size 16 bytes, dc_motor_prog.o(.text.DCM_init))
+<P><STRONG><a name="[9e]"></a>DCM_init</STRONG> (Thumb, 140 bytes, Stack size 16 bytes, dc_motor_prog.o(.text.DCM_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 412<LI>Call Chain = DCM_init &rArr; PWM_init_all_channels &rArr; GPIO_init &rArr; GPIO_interruptPortEnable &rArr; __NVIC_EnableIRQ
 </UL>
-<BR>[Calls]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_init_all_channels
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_init
+<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_init_all_channels
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_init
-</UL>
-
-<P><STRONG><a name="[97]"></a>DCM_rotateDCM</STRONG> (Thumb, 74 bytes, Stack size 16 bytes, dc_motor_prog.o(.text.DCM_rotateDCM))
-<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = DCM_rotateDCM &rArr; DCM_u8SetDutyCycleOfPWM &rArr; PWM_set_Duty &rArr; GPT_start_timer &rArr; __aeabi_d2uiz
-</UL>
-<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_u8SetDutyCycleOfPWM
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_changeDCMDirection
-</UL>
-<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_rotate
+<BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_init
 </UL>
 
-<P><STRONG><a name="[98]"></a>DCM_stopMotor</STRONG> (Thumb, 126 bytes, Stack size 16 bytes, dc_motor_prog.o(.text.DCM_stopMotor))
+<P><STRONG><a name="[a1]"></a>DCM_rotateDCM</STRONG> (Thumb, 86 bytes, Stack size 24 bytes, dc_motor_prog.o(.text.DCM_rotateDCM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 192<LI>Call Chain = DCM_rotateDCM &rArr; DCM_u8SetDutyCycleOfPWM &rArr; PWM_set_Duty &rArr; GPT_start_timer &rArr; __aeabi_d2uiz
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_u8SetDutyCycleOfPWM
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_changeDCMDirection
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_rotate
+</UL>
+
+<P><STRONG><a name="[a2]"></a>DCM_stopMotor</STRONG> (Thumb, 132 bytes, Stack size 16 bytes, dc_motor_prog.o(.text.DCM_stopMotor))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = DCM_stopMotor &rArr; GPIO_writeLogic
 </UL>
-<BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_writeLogic
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_writeLogic
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_stop
-</UL>
-
-<P><STRONG><a name="[90]"></a>DCM_u8SetDutyCycleOfPWM</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, dc_motor_prog.o(.text.DCM_u8SetDutyCycleOfPWM))
-<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = DCM_u8SetDutyCycleOfPWM &rArr; PWM_set_Duty &rArr; GPT_start_timer &rArr; __aeabi_d2uiz
-</UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_set_Duty
-</UL>
-<BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_MoveForward
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_rotateDCM
+<BR>[Called By]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_stop
 </UL>
 
-<P><STRONG><a name="[a]"></a>GPIOA_Handler</STRONG> (Thumb, 132 bytes, Stack size 16 bytes, gpio_prog.o(.text.GPIOA_Handler))
+<P><STRONG><a name="[9a]"></a>DCM_u8SetDutyCycleOfPWM</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, dc_motor_prog.o(.text.DCM_u8SetDutyCycleOfPWM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = DCM_u8SetDutyCycleOfPWM &rArr; PWM_set_Duty &rArr; GPT_start_timer &rArr; __aeabi_d2uiz
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_set_Duty
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_rotateDCM
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_MoveForward
+</UL>
+
+<P><STRONG><a name="[a]"></a>GPIOA_Handler</STRONG> (Thumb, 136 bytes, Stack size 16 bytes, gpio_prog.o(.text.GPIOA_Handler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = GPIOA_Handler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_tm4c123.o(RESET)
 </UL>
-<P><STRONG><a name="[b]"></a>GPIOB_Handler</STRONG> (Thumb, 132 bytes, Stack size 16 bytes, gpio_prog.o(.text.GPIOB_Handler))
+<P><STRONG><a name="[b]"></a>GPIOB_Handler</STRONG> (Thumb, 136 bytes, Stack size 16 bytes, gpio_prog.o(.text.GPIOB_Handler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = GPIOB_Handler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_tm4c123.o(RESET)
 </UL>
-<P><STRONG><a name="[c]"></a>GPIOC_Handler</STRONG> (Thumb, 132 bytes, Stack size 16 bytes, gpio_prog.o(.text.GPIOC_Handler))
+<P><STRONG><a name="[c]"></a>GPIOC_Handler</STRONG> (Thumb, 136 bytes, Stack size 16 bytes, gpio_prog.o(.text.GPIOC_Handler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = GPIOC_Handler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_tm4c123.o(RESET)
 </UL>
-<P><STRONG><a name="[d]"></a>GPIOD_Handler</STRONG> (Thumb, 132 bytes, Stack size 16 bytes, gpio_prog.o(.text.GPIOD_Handler))
+<P><STRONG><a name="[d]"></a>GPIOD_Handler</STRONG> (Thumb, 136 bytes, Stack size 16 bytes, gpio_prog.o(.text.GPIOD_Handler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = GPIOD_Handler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_tm4c123.o(RESET)
 </UL>
-<P><STRONG><a name="[e]"></a>GPIOE_Handler</STRONG> (Thumb, 132 bytes, Stack size 16 bytes, gpio_prog.o(.text.GPIOE_Handler))
+<P><STRONG><a name="[e]"></a>GPIOE_Handler</STRONG> (Thumb, 136 bytes, Stack size 16 bytes, gpio_prog.o(.text.GPIOE_Handler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = GPIOE_Handler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_tm4c123.o(RESET)
 </UL>
-<P><STRONG><a name="[28]"></a>GPIOF_Handler</STRONG> (Thumb, 132 bytes, Stack size 16 bytes, gpio_prog.o(.text.GPIOF_Handler))
+<P><STRONG><a name="[28]"></a>GPIOF_Handler</STRONG> (Thumb, 136 bytes, Stack size 16 bytes, gpio_prog.o(.text.GPIOF_Handler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = GPIOF_Handler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_tm4c123.o(RESET)
 </UL>
-<P><STRONG><a name="[95]"></a>GPIO_init</STRONG> (Thumb, 3822 bytes, Stack size 360 bytes, gpio_prog.o(.text.GPIO_init))
+<P><STRONG><a name="[9f]"></a>GPIO_init</STRONG> (Thumb, 3916 bytes, Stack size 360 bytes, gpio_prog.o(.text.GPIO_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 380<LI>Call Chain = GPIO_init &rArr; GPIO_interruptPortEnable &rArr; __NVIC_EnableIRQ
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_interruptPortEnable
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_setPinCallbackHandelr
+<BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_setPinCallbackHandelr
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_interruptPortEnable
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PUSH_BTN_intialize
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_init_all_channels
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_init
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_initialize
+<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_init_all_channels
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_init
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_initialize
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PUSH_BTN_intialize
 </UL>
 
-<P><STRONG><a name="[9b]"></a>GPIO_interruptPortEnable</STRONG> (Thumb, 202 bytes, Stack size 16 bytes, gpio_prog.o(.text.GPIO_interruptPortEnable))
+<P><STRONG><a name="[a5]"></a>GPIO_interruptPortEnable</STRONG> (Thumb, 206 bytes, Stack size 16 bytes, gpio_prog.o(.text.GPIO_interruptPortEnable))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = GPIO_interruptPortEnable &rArr; __NVIC_EnableIRQ
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_EnableIRQ
+<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_EnableIRQ
 </UL>
-<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_init
+<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_init
 </UL>
 
-<P><STRONG><a name="[b2]"></a>GPIO_readLogic</STRONG> (Thumb, 140 bytes, Stack size 16 bytes, gpio_prog.o(.text.GPIO_readLogic))
+<P><STRONG><a name="[bc]"></a>GPIO_readLogic</STRONG> (Thumb, 142 bytes, Stack size 16 bytes, gpio_prog.o(.text.GPIO_readLogic))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = GPIO_readLogic
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PUSH_BTN_read_state
+<BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PUSH_BTN_read_state
 </UL>
 
-<P><STRONG><a name="[9a]"></a>GPIO_setPinCallbackHandelr</STRONG> (Thumb, 288 bytes, Stack size 8 bytes, gpio_prog.o(.text.GPIO_setPinCallbackHandelr))
+<P><STRONG><a name="[a4]"></a>GPIO_setPinCallbackHandelr</STRONG> (Thumb, 294 bytes, Stack size 8 bytes, gpio_prog.o(.text.GPIO_setPinCallbackHandelr))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = GPIO_setPinCallbackHandelr
 </UL>
-<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_init
+<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_init
 </UL>
 
-<P><STRONG><a name="[93]"></a>GPIO_toggleLogic</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, gpio_prog.o(.text.GPIO_toggleLogic))
+<P><STRONG><a name="[9d]"></a>GPIO_toggleLogic</STRONG> (Thumb, 104 bytes, Stack size 16 bytes, gpio_prog.o(.text.GPIO_toggleLogic))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = GPIO_toggleLogic
 </UL>
-<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_changeDCMDirection
+<BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_changeDCMDirection
 </UL>
 
-<P><STRONG><a name="[91]"></a>GPIO_writeLogic</STRONG> (Thumb, 194 bytes, Stack size 24 bytes, gpio_prog.o(.text.GPIO_writeLogic))
+<P><STRONG><a name="[9b]"></a>GPIO_writeLogic</STRONG> (Thumb, 202 bytes, Stack size 24 bytes, gpio_prog.o(.text.GPIO_writeLogic))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = GPIO_writeLogic
 </UL>
-<BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_logic
-<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_MoveForward
-<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_stopMotor
-<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_turnOff
-<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_turnOn
+<BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_stopMotor
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_MoveForward
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_turnOn
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_turnOff
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_logic
 </UL>
 
-<P><STRONG><a name="[9d]"></a>GPT_disable_interrupt</STRONG> (Thumb, 158 bytes, Stack size 16 bytes, gpt_program.o(.text.GPT_disable_interrupt))
+<P><STRONG><a name="[a7]"></a>GPT_disable_interrupt</STRONG> (Thumb, 162 bytes, Stack size 16 bytes, gpt_program.o(.text.GPT_disable_interrupt))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = GPT_disable_interrupt &rArr; __NVIC_DisableIRQ
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_DisableIRQ
+<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_DisableIRQ
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HANDLER_start_timer
+<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HANDLER_start_timer
 </UL>
 
-<P><STRONG><a name="[9f]"></a>GPT_enable_interrupt</STRONG> (Thumb, 182 bytes, Stack size 16 bytes, gpt_program.o(.text.GPT_enable_interrupt))
+<P><STRONG><a name="[a9]"></a>GPT_enable_interrupt</STRONG> (Thumb, 186 bytes, Stack size 16 bytes, gpt_program.o(.text.GPT_enable_interrupt))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = GPT_enable_interrupt &rArr; __NVIC_EnableIRQ
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_EnableIRQ
+<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_EnableIRQ
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HANDLER_start_timer
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_set_Duty
+<BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_set_Duty
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HANDLER_start_timer
 </UL>
 
-<P><STRONG><a name="[a7]"></a>GPT_init</STRONG> (Thumb, 728 bytes, Stack size 32 bytes, gpt_program.o(.text.GPT_init))
+<P><STRONG><a name="[b1]"></a>GPT_init</STRONG> (Thumb, 736 bytes, Stack size 32 bytes, gpt_program.o(.text.GPT_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = GPT_init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HANDLER_init
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pwm_init_timer
+<BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HANDLER_init
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pwm_init_timer
 </UL>
 
-<P><STRONG><a name="[a1]"></a>GPT_start_timer</STRONG> (Thumb, 672 bytes, Stack size 72 bytes, gpt_program.o(.text.GPT_start_timer))
-<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = GPT_start_timer &rArr; __aeabi_d2uiz
+<P><STRONG><a name="[ab]"></a>GPT_start_timer</STRONG> (Thumb, 680 bytes, Stack size 80 bytes, gpt_program.o(.text.GPT_start_timer))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = GPT_start_timer &rArr; __aeabi_d2uiz
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
-<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2uiz
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_stop_timer
+<BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_stop_timer
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2uiz
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HANDLER_start_timer
+<BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_set_Duty
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HANDLER_start_timer
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_logic
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_set_Duty
 </UL>
 
-<P><STRONG><a name="[a5]"></a>GPT_stop_timer</STRONG> (Thumb, 98 bytes, Stack size 8 bytes, gpt_program.o(.text.GPT_stop_timer))
+<P><STRONG><a name="[af]"></a>GPT_stop_timer</STRONG> (Thumb, 100 bytes, Stack size 8 bytes, gpt_program.o(.text.GPT_stop_timer))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = GPT_stop_timer
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_start_timer
+<BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_start_timer
 </UL>
 
-<P><STRONG><a name="[a6]"></a>HANDLER_init</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, htimer_program.o(.text.HANDLER_init))
+<P><STRONG><a name="[b0]"></a>HANDLER_init</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, htimer_program.o(.text.HANDLER_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = HANDLER_init &rArr; GPT_init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_init
+<BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_init
-</UL>
-
-<P><STRONG><a name="[a8]"></a>HANDLER_start_timer</STRONG> (Thumb, 126 bytes, Stack size 24 bytes, htimer_program.o(.text.HANDLER_start_timer))
-<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = HANDLER_start_timer &rArr; GPT_start_timer &rArr; __aeabi_d2uiz
-</UL>
-<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_disable_interrupt
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_enable_interrupt
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_start_timer
-</UL>
-<BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_forward_short
-<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_rotate
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_forward_long
-<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_start_btn
-<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_stop
+<BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_init
 </UL>
 
-<P><STRONG><a name="[a9]"></a>LED_initialize</STRONG> (Thumb, 130 bytes, Stack size 40 bytes, led_prog.o(.text.LED_initialize))
+<P><STRONG><a name="[b2]"></a>HANDLER_start_timer</STRONG> (Thumb, 138 bytes, Stack size 24 bytes, htimer_program.o(.text.HANDLER_start_timer))
+<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = HANDLER_start_timer &rArr; GPT_start_timer &rArr; __aeabi_d2uiz
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_start_timer
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_enable_interrupt
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_disable_interrupt
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_start_btn
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_stop
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_rotate
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_forward_short
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_forward_long
+</UL>
+
+<P><STRONG><a name="[b3]"></a>LED_initialize</STRONG> (Thumb, 134 bytes, Stack size 40 bytes, led_prog.o(.text.LED_initialize))
 <BR><BR>[Stack]<UL><LI>Max Depth = 420<LI>Call Chain = LED_initialize &rArr; GPIO_init &rArr; GPIO_interruptPortEnable &rArr; __NVIC_EnableIRQ
 </UL>
-<BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_init
+<BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_init
+<BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_init
 </UL>
 
-<P><STRONG><a name="[aa]"></a>LED_turnOff</STRONG> (Thumb, 132 bytes, Stack size 40 bytes, led_prog.o(.text.LED_turnOff))
+<P><STRONG><a name="[b4]"></a>LED_turnOff</STRONG> (Thumb, 140 bytes, Stack size 40 bytes, led_prog.o(.text.LED_turnOff))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = LED_turnOff &rArr; GPIO_writeLogic
 </UL>
-<BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_writeLogic
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_writeLogic
 </UL>
-<BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_forward_short_side
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_forward_long_side
-<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_stop
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_stop
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_forward_short_side
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_forward_long_side
 </UL>
 
-<P><STRONG><a name="[ab]"></a>LED_turnOn</STRONG> (Thumb, 132 bytes, Stack size 40 bytes, led_prog.o(.text.LED_turnOn))
+<P><STRONG><a name="[b5]"></a>LED_turnOn</STRONG> (Thumb, 136 bytes, Stack size 40 bytes, led_prog.o(.text.LED_turnOn))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = LED_turnOn &rArr; GPIO_writeLogic
 </UL>
-<BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_writeLogic
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_writeLogic
 </UL>
-<BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_forward_short_side
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_rotate
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_forward_long_side
-<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_stop
-</UL>
-
-<P><STRONG><a name="[ac]"></a>Led_forward_long_side</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, app.o(.text.Led_forward_long_side))
-<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = Led_forward_long_side &rArr; LED_turnOff &rArr; GPIO_writeLogic
-</UL>
-<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_turnOff
-<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_turnOn
-</UL>
-<BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_forward_long
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_stop
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_rotate
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_forward_short_side
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_forward_long_side
 </UL>
 
-<P><STRONG><a name="[ad]"></a>Led_forward_short_side</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, app.o(.text.Led_forward_short_side))
-<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = Led_forward_short_side &rArr; LED_turnOff &rArr; GPIO_writeLogic
+<P><STRONG><a name="[b6]"></a>Led_forward_long_side</STRONG> (Thumb, 48 bytes, Stack size 24 bytes, app.o(.text.Led_forward_long_side))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = Led_forward_long_side &rArr; LED_turnOn &rArr; GPIO_writeLogic
 </UL>
-<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_turnOff
-<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_turnOn
+<BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_turnOn
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_turnOff
 </UL>
-<BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_forward_short
-</UL>
-
-<P><STRONG><a name="[ae]"></a>Led_rotate</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, app.o(.text.Led_rotate))
-<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = Led_rotate &rArr; LED_turnOn &rArr; GPIO_writeLogic
-</UL>
-<BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_turnOn
-</UL>
-<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_rotate
+<BR>[Called By]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_forward_long
 </UL>
 
-<P><STRONG><a name="[af]"></a>Led_stop</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, app.o(.text.Led_stop))
-<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = Led_stop &rArr; LED_turnOff &rArr; GPIO_writeLogic
+<P><STRONG><a name="[b7]"></a>Led_forward_short_side</STRONG> (Thumb, 46 bytes, Stack size 24 bytes, app.o(.text.Led_forward_short_side))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = Led_forward_short_side &rArr; LED_turnOn &rArr; GPIO_writeLogic
 </UL>
-<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_turnOff
-<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_turnOn
+<BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_turnOn
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_turnOff
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_start_btn
-<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_stop
-<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_start
+<BR>[Called By]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_forward_short
 </UL>
 
-<P><STRONG><a name="[b0]"></a>PUSH_BTN_intialize</STRONG> (Thumb, 206 bytes, Stack size 64 bytes, push_button_prog.o(.text.PUSH_BTN_intialize))
+<P><STRONG><a name="[b8]"></a>Led_rotate</STRONG> (Thumb, 48 bytes, Stack size 24 bytes, app.o(.text.Led_rotate))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = Led_rotate &rArr; LED_turnOn &rArr; GPIO_writeLogic
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_turnOn
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_rotate
+</UL>
+
+<P><STRONG><a name="[b9]"></a>Led_stop</STRONG> (Thumb, 46 bytes, Stack size 24 bytes, app.o(.text.Led_stop))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = Led_stop &rArr; LED_turnOn &rArr; GPIO_writeLogic
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_turnOn
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_turnOff
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_start
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_start_btn
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_stop
+</UL>
+
+<P><STRONG><a name="[ba]"></a>PUSH_BTN_intialize</STRONG> (Thumb, 210 bytes, Stack size 64 bytes, push_button_prog.o(.text.PUSH_BTN_intialize))
 <BR><BR>[Stack]<UL><LI>Max Depth = 444<LI>Call Chain = PUSH_BTN_intialize &rArr; GPIO_init &rArr; GPIO_interruptPortEnable &rArr; __NVIC_EnableIRQ
 </UL>
-<BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_init
+<BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_init
+<BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_init
 </UL>
 
-<P><STRONG><a name="[b1]"></a>PUSH_BTN_read_state</STRONG> (Thumb, 178 bytes, Stack size 40 bytes, push_button_prog.o(.text.PUSH_BTN_read_state))
+<P><STRONG><a name="[bb]"></a>PUSH_BTN_read_state</STRONG> (Thumb, 182 bytes, Stack size 40 bytes, push_button_prog.o(.text.PUSH_BTN_read_state))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = PUSH_BTN_read_state &rArr; GPIO_readLogic
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_readLogic
+<BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_readLogic
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_start_btn
+<BR>[Called By]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_start_btn
 </UL>
 
-<P><STRONG><a name="[96]"></a>PWM_init_all_channels</STRONG> (Thumb, 92 bytes, Stack size 16 bytes, pwm_prog.o(.text.PWM_init_all_channels))
+<P><STRONG><a name="[a0]"></a>PWM_init_all_channels</STRONG> (Thumb, 88 bytes, Stack size 16 bytes, pwm_prog.o(.text.PWM_init_all_channels))
 <BR><BR>[Stack]<UL><LI>Max Depth = 396<LI>Call Chain = PWM_init_all_channels &rArr; GPIO_init &rArr; GPIO_interruptPortEnable &rArr; __NVIC_EnableIRQ
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pwm_init_timer
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_init
+<BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_init
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pwm_init_timer
 </UL>
-<BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_init
+<BR>[Called By]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_init
 </UL>
 
-<P><STRONG><a name="[99]"></a>PWM_set_Duty</STRONG> (Thumb, 98 bytes, Stack size 16 bytes, pwm_prog.o(.text.PWM_set_Duty))
-<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = PWM_set_Duty &rArr; GPT_start_timer &rArr; __aeabi_d2uiz
+<P><STRONG><a name="[a3]"></a>PWM_set_Duty</STRONG> (Thumb, 122 bytes, Stack size 40 bytes, pwm_prog.o(.text.PWM_set_Duty))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = PWM_set_Duty &rArr; GPT_start_timer &rArr; __aeabi_d2uiz
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_enable_interrupt
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_start_timer
+<BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_start_timer
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_enable_interrupt
 </UL>
-<BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_u8SetDutyCycleOfPWM
+<BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_u8SetDutyCycleOfPWM
 </UL>
 
 <P><STRONG><a name="[76]"></a>SystemInit</STRONG> (Thumb, 268 bytes, Stack size 4 bytes, system_tm4c123.o(.text.SystemInit))
@@ -1504,194 +1576,194 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_tm4c123.o(.text)
 </UL>
-<P><STRONG><a name="[1d]"></a>TIMER0A_Handler</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, gpt_program.o(.text.TIMER0A_Handler))
+<P><STRONG><a name="[1d]"></a>TIMER0A_Handler</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, gpt_program.o(.text.TIMER0A_Handler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TIMER0A_Handler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_tm4c123.o(RESET)
 </UL>
-<P><STRONG><a name="[4d]"></a>WTIMER0A_Handler</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, gpt_program.o(.text.WTIMER0A_Handler))
+<P><STRONG><a name="[4d]"></a>WTIMER0A_Handler</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, gpt_program.o(.text.WTIMER0A_Handler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = WTIMER0A_Handler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_tm4c123.o(RESET)
 </UL>
-<P><STRONG><a name="[4f]"></a>WTIMER1A_Handler</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, gpt_program.o(.text.WTIMER1A_Handler))
+<P><STRONG><a name="[4f]"></a>WTIMER1A_Handler</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, gpt_program.o(.text.WTIMER1A_Handler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = WTIMER1A_Handler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_tm4c123.o(RESET)
 </UL>
-<P><STRONG><a name="[b4]"></a>app_init</STRONG> (Thumb, 94 bytes, Stack size 16 bytes, app.o(.text.app_init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 460<LI>Call Chain = app_init &rArr; PUSH_BTN_intialize &rArr; GPIO_init &rArr; GPIO_interruptPortEnable &rArr; __NVIC_EnableIRQ
+<P><STRONG><a name="[be]"></a>app_init</STRONG> (Thumb, 118 bytes, Stack size 40 bytes, app.o(.text.app_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 484<LI>Call Chain = app_init &rArr; PUSH_BTN_intialize &rArr; GPIO_init &rArr; GPIO_interruptPortEnable &rArr; __NVIC_EnableIRQ
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HANDLER_init
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PUSH_BTN_intialize
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_init
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_initialize
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_init
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_initialize
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HANDLER_init
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PUSH_BTN_intialize
 </UL>
-<BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[b5]"></a>app_start</STRONG> (Thumb, 746 bytes, Stack size 8 bytes, app.o(.text.app_start))
-<BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = app_start &rArr; car_rotate &rArr; DCM_rotateDCM &rArr; DCM_u8SetDutyCycleOfPWM &rArr; PWM_set_Duty &rArr; GPT_start_timer &rArr; __aeabi_d2uiz
-</UL>
-<BR>[Calls]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_forward_short
-<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_rotate
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_forward_long
-<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_start_btn
-<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_stop
-<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_stop
-</UL>
-<BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[b7]"></a>car_forward_long</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, app.o(.text.car_forward_long))
-<BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = car_forward_long &rArr; DCM_MoveForward &rArr; DCM_u8SetDutyCycleOfPWM &rArr; PWM_set_Duty &rArr; GPT_start_timer &rArr; __aeabi_d2uiz
+<P><STRONG><a name="[bf]"></a>app_start</STRONG> (Thumb, 754 bytes, Stack size 8 bytes, app.o(.text.app_start))
+<BR><BR>[Stack]<UL><LI>Max Depth = 216<LI>Call Chain = app_start &rArr; car_rotate &rArr; DCM_rotateDCM &rArr; DCM_u8SetDutyCycleOfPWM &rArr; PWM_set_Duty &rArr; GPT_start_timer &rArr; __aeabi_d2uiz
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_forward_long_side
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HANDLER_start_timer
-<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_MoveForward
+<BR>[Calls]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_start_btn
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_stop
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_rotate
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_forward_short
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_forward_long
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_stop
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_start
-</UL>
-
-<P><STRONG><a name="[ba]"></a>car_forward_short</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, app.o(.text.car_forward_short))
-<BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = car_forward_short &rArr; DCM_MoveForward &rArr; DCM_u8SetDutyCycleOfPWM &rArr; PWM_set_Duty &rArr; GPT_start_timer &rArr; __aeabi_d2uiz
-</UL>
-<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_forward_short_side
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HANDLER_start_timer
-<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_MoveForward
-</UL>
-<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_start
+<BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[b9]"></a>car_rotate</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, app.o(.text.car_rotate))
-<BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = car_rotate &rArr; DCM_rotateDCM &rArr; DCM_u8SetDutyCycleOfPWM &rArr; PWM_set_Duty &rArr; GPT_start_timer &rArr; __aeabi_d2uiz
+<P><STRONG><a name="[c1]"></a>car_forward_long</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, app.o(.text.car_forward_long))
+<BR><BR>[Stack]<UL><LI>Max Depth = 208<LI>Call Chain = car_forward_long &rArr; DCM_MoveForward &rArr; DCM_u8SetDutyCycleOfPWM &rArr; PWM_set_Duty &rArr; GPT_start_timer &rArr; __aeabi_d2uiz
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_rotate
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HANDLER_start_timer
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_rotateDCM
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_MoveForward
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_forward_long_side
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HANDLER_start_timer
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_start
-</UL>
-
-<P><STRONG><a name="[b8]"></a>car_stop</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, app.o(.text.car_stop))
-<BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = car_stop &rArr; HANDLER_start_timer &rArr; GPT_start_timer &rArr; __aeabi_d2uiz
-</UL>
-<BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_stop
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HANDLER_start_timer
-<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_stopMotor
-</UL>
-<BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stopSystem
-<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_start
+<BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_start
 </UL>
 
-<P><STRONG><a name="[87]"></a>main</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, main.o(.text.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 476<LI>Call Chain = main &rArr; app_init &rArr; PUSH_BTN_intialize &rArr; GPIO_init &rArr; GPIO_interruptPortEnable &rArr; __NVIC_EnableIRQ
+<P><STRONG><a name="[c4]"></a>car_forward_short</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, app.o(.text.car_forward_short))
+<BR><BR>[Stack]<UL><LI>Max Depth = 208<LI>Call Chain = car_forward_short &rArr; DCM_MoveForward &rArr; DCM_u8SetDutyCycleOfPWM &rArr; PWM_set_Duty &rArr; GPT_start_timer &rArr; __aeabi_d2uiz
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_start
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_init
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_MoveForward
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_forward_short_side
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HANDLER_start_timer
 </UL>
-<BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
+<BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_start
 </UL>
 
-<P><STRONG><a name="[b6]"></a>read_start_btn</STRONG> (Thumb, 112 bytes, Stack size 24 bytes, app.o(.text.read_start_btn))
-<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = read_start_btn &rArr; HANDLER_start_timer &rArr; GPT_start_timer &rArr; __aeabi_d2uiz
+<P><STRONG><a name="[c3]"></a>car_rotate</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, app.o(.text.car_rotate))
+<BR><BR>[Stack]<UL><LI>Max Depth = 208<LI>Call Chain = car_rotate &rArr; DCM_rotateDCM &rArr; DCM_u8SetDutyCycleOfPWM &rArr; PWM_set_Duty &rArr; GPT_start_timer &rArr; __aeabi_d2uiz
 </UL>
-<BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_stop
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HANDLER_start_timer
-<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PUSH_BTN_read_state
+<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_rotateDCM
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_rotate
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HANDLER_start_timer
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_start
+<BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_start
+</UL>
+
+<P><STRONG><a name="[c2]"></a>car_stop</STRONG> (Thumb, 66 bytes, Stack size 24 bytes, app.o(.text.car_stop))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = car_stop &rArr; HANDLER_start_timer &rArr; GPT_start_timer &rArr; __aeabi_d2uiz
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCM_stopMotor
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_stop
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HANDLER_start_timer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_start
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stopSystem
+</UL>
+
+<P><STRONG><a name="[89]"></a>main</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, main.o(.text.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 500<LI>Call Chain = main &rArr; app_init &rArr; PUSH_BTN_intialize &rArr; GPIO_init &rArr; GPIO_interruptPortEnable &rArr; __NVIC_EnableIRQ
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_start
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
+</UL>
+
+<P><STRONG><a name="[c0]"></a>read_start_btn</STRONG> (Thumb, 128 bytes, Stack size 32 bytes, app.o(.text.read_start_btn))
+<BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = read_start_btn &rArr; HANDLER_start_timer &rArr; GPT_start_timer &rArr; __aeabi_d2uiz
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_stop
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HANDLER_start_timer
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PUSH_BTN_read_state
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_start
 </UL>
 
 <P><STRONG><a name="[78]"></a>stopSystem</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, app.o(.text.stopSystem))
-<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = stopSystem &rArr; car_stop &rArr; HANDLER_start_timer &rArr; GPT_start_timer &rArr; __aeabi_d2uiz
+<BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = stopSystem &rArr; car_stop &rArr; HANDLER_start_timer &rArr; GPT_start_timer &rArr; __aeabi_d2uiz
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_stop
+<BR>[Calls]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_stop
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app.o(.text.app_init)
 </UL>
 <P><STRONG><a name="[7a]"></a>timeOut</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, app.o(.text.timeOut))
 <BR>[Address Reference Count : 1]<UL><LI> app.o(.data.str_gl_timer)
 </UL>
-<P><STRONG><a name="[a3]"></a>__aeabi_ddiv</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, ddiv.o(x$fpl$ddiv))
+<P><STRONG><a name="[ad]"></a>__aeabi_ddiv</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, ddiv.o(x$fpl$ddiv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __aeabi_ddiv
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_start_timer
+<BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_start_timer
 </UL>
 
-<P><STRONG><a name="[bb]"></a>_ddiv</STRONG> (Thumb, 556 bytes, Stack size 32 bytes, ddiv.o(x$fpl$ddiv), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_dretinf
-<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_dnaninf
+<P><STRONG><a name="[c5]"></a>_ddiv</STRONG> (Thumb, 552 bytes, Stack size 32 bytes, ddiv.o(x$fpl$ddiv), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_dretinf
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_dnaninf
 </UL>
 
-<P><STRONG><a name="[a4]"></a>__aeabi_d2uiz</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, dfixu.o(x$fpl$dfixu))
+<P><STRONG><a name="[ae]"></a>__aeabi_d2uiz</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, dfixu.o(x$fpl$dfixu))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __aeabi_d2uiz
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_start_timer
+<BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_start_timer
 </UL>
 
-<P><STRONG><a name="[be]"></a>_dfixu</STRONG> (Thumb, 90 bytes, Stack size 32 bytes, dfixu.o(x$fpl$dfixu), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_dnaninf
+<P><STRONG><a name="[c8]"></a>_dfixu</STRONG> (Thumb, 90 bytes, Stack size 32 bytes, dfixu.o(x$fpl$dfixu), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_dnaninf
 </UL>
 
-<P><STRONG><a name="[a2]"></a>__aeabi_ui2d</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, dflt_clz.o(x$fpl$dfltu))
-<BR><BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_start_timer
+<P><STRONG><a name="[ac]"></a>__aeabi_ui2d</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, dflt_clz.o(x$fpl$dfltu))
+<BR><BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_start_timer
 </UL>
 
-<P><STRONG><a name="[ea]"></a>_dfltu</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, dflt_clz.o(x$fpl$dfltu), UNUSED)
+<P><STRONG><a name="[f5]"></a>_dfltu</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, dflt_clz.o(x$fpl$dfltu), UNUSED)
 
-<P><STRONG><a name="[bd]"></a>__fpl_dnaninf</STRONG> (Thumb, 156 bytes, Stack size 16 bytes, dnaninf.o(x$fpl$dnaninf), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dfixu
-<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ddiv
+<P><STRONG><a name="[c7]"></a>__fpl_dnaninf</STRONG> (Thumb, 156 bytes, Stack size 16 bytes, dnaninf.o(x$fpl$dnaninf), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dfixu
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ddiv
 </UL>
 
-<P><STRONG><a name="[bc]"></a>__fpl_dretinf</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, dretinf.o(x$fpl$dretinf), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ddiv
+<P><STRONG><a name="[c6]"></a>__fpl_dretinf</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, dretinf.o(x$fpl$dretinf), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ddiv
 </UL>
 
 <P><STRONG><a name="[81]"></a>_fp_init</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, fpinit.o(x$fpl$fpinit))
 <BR><BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init_fp_1
 </UL>
 
-<P><STRONG><a name="[eb]"></a>__fplib_config_fpu_vfp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, fpinit.o(x$fpl$fpinit), UNUSED)
+<P><STRONG><a name="[f6]"></a>__fplib_config_fpu_vfp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, fpinit.o(x$fpl$fpinit), UNUSED)
 
-<P><STRONG><a name="[ec]"></a>__fplib_config_pureend_doubles</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, fpinit.o(x$fpl$fpinit), UNUSED)
+<P><STRONG><a name="[f7]"></a>__fplib_config_pureend_doubles</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, fpinit.o(x$fpl$fpinit), UNUSED)
 <P>
 <H3>
 Local Symbols
 </H3>
-<P><STRONG><a name="[9c]"></a>__NVIC_EnableIRQ</STRONG> (Thumb, 48 bytes, Stack size 4 bytes, gpio_prog.o(.text.__NVIC_EnableIRQ))
+<P><STRONG><a name="[a6]"></a>__NVIC_EnableIRQ</STRONG> (Thumb, 52 bytes, Stack size 4 bytes, gpio_prog.o(.text.__NVIC_EnableIRQ))
 <BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = __NVIC_EnableIRQ
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_interruptPortEnable
+<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_interruptPortEnable
 </UL>
 
-<P><STRONG><a name="[a0]"></a>__NVIC_EnableIRQ</STRONG> (Thumb, 48 bytes, Stack size 4 bytes, gpt_program.o(.text.__NVIC_EnableIRQ))
-<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = __NVIC_EnableIRQ
-</UL>
-<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_enable_interrupt
-</UL>
-
-<P><STRONG><a name="[9e]"></a>__NVIC_DisableIRQ</STRONG> (Thumb, 56 bytes, Stack size 4 bytes, gpt_program.o(.text.__NVIC_DisableIRQ))
+<P><STRONG><a name="[a8]"></a>__NVIC_DisableIRQ</STRONG> (Thumb, 60 bytes, Stack size 4 bytes, gpt_program.o(.text.__NVIC_DisableIRQ))
 <BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = __NVIC_DisableIRQ
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_disable_interrupt
+<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_disable_interrupt
 </UL>
 
-<P><STRONG><a name="[79]"></a>PWM_logic</STRONG> (Thumb, 242 bytes, Stack size 16 bytes, pwm_prog.o(.text.PWM_logic))
-<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = PWM_logic &rArr; GPT_start_timer &rArr; __aeabi_d2uiz
+<P><STRONG><a name="[aa]"></a>__NVIC_EnableIRQ</STRONG> (Thumb, 52 bytes, Stack size 4 bytes, gpt_program.o(.text.__NVIC_EnableIRQ))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = __NVIC_EnableIRQ
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_start_timer
-<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_writeLogic
+<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_enable_interrupt
+</UL>
+
+<P><STRONG><a name="[79]"></a>PWM_logic</STRONG> (Thumb, 238 bytes, Stack size 16 bytes, pwm_prog.o(.text.PWM_logic))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = PWM_logic &rArr; GPT_start_timer &rArr; __aeabi_d2uiz
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_start_timer
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_writeLogic
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> pwm_prog.o(.data.gl_str_GPT_config)
 </UL>
-<P><STRONG><a name="[b3]"></a>pwm_init_timer</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, pwm_prog.o(.text.pwm_init_timer))
+<P><STRONG><a name="[bd]"></a>pwm_init_timer</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, pwm_prog.o(.text.pwm_init_timer))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = pwm_init_timer &rArr; GPT_init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_init
+<BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_init_all_channels
+<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_init_all_channels
 </UL>
 <P>
 <H3>

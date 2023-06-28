@@ -13,9 +13,29 @@
 extern  ST_PUSH_BTN_pinCfg_t a_pushBtnCfgPins[PUSH_BTN_PIN_CFG_ARRAY_SIZE] ;
 extern  ST_led_pinCfg_t a_ledCfgPins[LED_PIN_CFG_ARRAY_SIZE] ;
 
-#define FIRST_STOP    1
-#define ROTATEING     2
-#define SECOND_STOP   3
+#define FIRST_STOP       1
+#define ROTATEING        2
+#define SECOND_STOP      3
+											   
+#define STOP_BTN_INDX    0
+#define START_BTN_INDX   1
+#define LONG_SIDE_INDX   0
+#define SHORT_SIDE_INDX  1
+#define STOP_LED_INDX    2
+
+
+#define HALF_SECOND      500
+#define ONE_SECOND       1
+#define TWO_SECONDS      2
+#define THREE_SECONDS    3
+
+
+#define SPEED_50         50
+#define SPEED_30         30
+
+
+#define DEBOUNCING_DELAY 200
+
 typedef enum 
 {
 	FORWARD_LONG_SIDE,
