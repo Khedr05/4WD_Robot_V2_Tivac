@@ -170,6 +170,8 @@ Section Cross References
     app.o(.ARM.exidx.text.app_init) refers to app.o(.text.app_init) for [Anonymous Symbol]
     app.o(.text.stopSystem) refers to app.o(.text.car_stop) for car_stop
     app.o(.text.stopSystem) refers to app.o(.bss.bool_gl_idle_stop) for bool_gl_idle_stop
+    app.o(.text.stopSystem) refers to app.o(.bss.bool_gl_lock_state) for bool_gl_lock_state
+    app.o(.text.stopSystem) refers to app.o(.bss.bool_gl_is_timeOut) for bool_gl_is_timeOut
     app.o(.text.stopSystem) refers to app.o(.data.enu_gl_car_state) for enu_gl_car_state
     app.o(.ARM.exidx.text.stopSystem) refers to app.o(.text.stopSystem) for [Anonymous Symbol]
     app.o(.text.app_start) refers to app.o(.data.enu_gl_car_state) for enu_gl_car_state
@@ -694,21 +696,21 @@ Image Symbol Table
     [Anonymous Symbol]                       0x000033bc   Section        0  pwm_prog.o(.text.pwm_init_timer)
     [Anonymous Symbol]                       0x000033ec   Section        0  app.o(.text.read_start_btn)
     [Anonymous Symbol]                       0x0000346c   Section        0  app.o(.text.stopSystem)
-    [Anonymous Symbol]                       0x0000348c   Section        0  app.o(.text.timeOut)
-    $v0                                      0x0000349c   Number         0  ddiv.o(x$fpl$ddiv)
-    x$fpl$ddiv                               0x0000349c   Section      688  ddiv.o(x$fpl$ddiv)
-    ddiv_entry                               0x000034a3   Thumb Code     0  ddiv.o(x$fpl$ddiv)
-    $v0                                      0x0000374c   Number         0  dfixu.o(x$fpl$dfixu)
-    x$fpl$dfixu                              0x0000374c   Section       90  dfixu.o(x$fpl$dfixu)
-    $v0                                      0x000037a6   Number         0  dflt_clz.o(x$fpl$dfltu)
-    x$fpl$dfltu                              0x000037a6   Section       38  dflt_clz.o(x$fpl$dfltu)
-    $v0                                      0x000037cc   Number         0  dnaninf.o(x$fpl$dnaninf)
-    x$fpl$dnaninf                            0x000037cc   Section      156  dnaninf.o(x$fpl$dnaninf)
-    $v0                                      0x00003868   Number         0  dretinf.o(x$fpl$dretinf)
-    x$fpl$dretinf                            0x00003868   Section       12  dretinf.o(x$fpl$dretinf)
-    $v0                                      0x00003874   Number         0  fpinit.o(x$fpl$fpinit)
-    x$fpl$fpinit                             0x00003874   Section       26  fpinit.o(x$fpl$fpinit)
-    x$fpl$usenofp                            0x0000388e   Section        0  usenofp.o(x$fpl$usenofp)
+    [Anonymous Symbol]                       0x000034a4   Section        0  app.o(.text.timeOut)
+    $v0                                      0x000034b4   Number         0  ddiv.o(x$fpl$ddiv)
+    x$fpl$ddiv                               0x000034b4   Section      688  ddiv.o(x$fpl$ddiv)
+    ddiv_entry                               0x000034bb   Thumb Code     0  ddiv.o(x$fpl$ddiv)
+    $v0                                      0x00003764   Number         0  dfixu.o(x$fpl$dfixu)
+    x$fpl$dfixu                              0x00003764   Section       90  dfixu.o(x$fpl$dfixu)
+    $v0                                      0x000037be   Number         0  dflt_clz.o(x$fpl$dfltu)
+    x$fpl$dfltu                              0x000037be   Section       38  dflt_clz.o(x$fpl$dfltu)
+    $v0                                      0x000037e4   Number         0  dnaninf.o(x$fpl$dnaninf)
+    x$fpl$dnaninf                            0x000037e4   Section      156  dnaninf.o(x$fpl$dnaninf)
+    $v0                                      0x00003880   Number         0  dretinf.o(x$fpl$dretinf)
+    x$fpl$dretinf                            0x00003880   Section       12  dretinf.o(x$fpl$dretinf)
+    $v0                                      0x0000388c   Number         0  fpinit.o(x$fpl$fpinit)
+    x$fpl$fpinit                             0x0000388c   Section       26  fpinit.o(x$fpl$fpinit)
+    x$fpl$usenofp                            0x000038a6   Section        0  usenofp.o(x$fpl$usenofp)
     .bss                                     0x200000b8   Section       96  libspace.o(.bss)
     GPIO_ptrFuncportaIrqCallback             0x20000118   Data          32  gpio_prog.o(.bss.GPIO_ptrFuncportaIrqCallback)
     [Anonymous Symbol]                       0x20000118   Section        0  gpio_prog.o(.bss.GPIO_ptrFuncportaIrqCallback)
@@ -998,22 +1000,22 @@ Image Symbol Table
     car_stop                                 0x00003365   Thumb Code    66  app.o(.text.car_stop)
     main                                     0x000033a9   Thumb Code    20  main.o(.text.main)
     read_start_btn                           0x000033ed   Thumb Code   128  app.o(.text.read_start_btn)
-    stopSystem                               0x0000346d   Thumb Code    32  app.o(.text.stopSystem)
-    timeOut                                  0x0000348d   Thumb Code    14  app.o(.text.timeOut)
-    __aeabi_ddiv                             0x0000349d   Thumb Code     0  ddiv.o(x$fpl$ddiv)
-    _ddiv                                    0x0000349d   Thumb Code   552  ddiv.o(x$fpl$ddiv)
-    __aeabi_d2uiz                            0x0000374d   Thumb Code     0  dfixu.o(x$fpl$dfixu)
-    _dfixu                                   0x0000374d   Thumb Code    90  dfixu.o(x$fpl$dfixu)
-    __aeabi_ui2d                             0x000037a7   Thumb Code     0  dflt_clz.o(x$fpl$dfltu)
-    _dfltu                                   0x000037a7   Thumb Code    38  dflt_clz.o(x$fpl$dfltu)
-    __fpl_dnaninf                            0x000037cd   Thumb Code   156  dnaninf.o(x$fpl$dnaninf)
-    __fpl_dretinf                            0x00003869   Thumb Code    12  dretinf.o(x$fpl$dretinf)
-    _fp_init                                 0x00003875   Thumb Code    26  fpinit.o(x$fpl$fpinit)
-    __fplib_config_fpu_vfp                   0x0000388d   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    __fplib_config_pureend_doubles           0x0000388d   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    __I$use$fp                               0x0000388e   Number         0  usenofp.o(x$fpl$usenofp)
-    Region$$Table$$Base                      0x00003890   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x000038b0   Number         0  anon$$obj.o(Region$$Table)
+    stopSystem                               0x0000346d   Thumb Code    54  app.o(.text.stopSystem)
+    timeOut                                  0x000034a5   Thumb Code    14  app.o(.text.timeOut)
+    __aeabi_ddiv                             0x000034b5   Thumb Code     0  ddiv.o(x$fpl$ddiv)
+    _ddiv                                    0x000034b5   Thumb Code   552  ddiv.o(x$fpl$ddiv)
+    __aeabi_d2uiz                            0x00003765   Thumb Code     0  dfixu.o(x$fpl$dfixu)
+    _dfixu                                   0x00003765   Thumb Code    90  dfixu.o(x$fpl$dfixu)
+    __aeabi_ui2d                             0x000037bf   Thumb Code     0  dflt_clz.o(x$fpl$dfltu)
+    _dfltu                                   0x000037bf   Thumb Code    38  dflt_clz.o(x$fpl$dfltu)
+    __fpl_dnaninf                            0x000037e5   Thumb Code   156  dnaninf.o(x$fpl$dnaninf)
+    __fpl_dretinf                            0x00003881   Thumb Code    12  dretinf.o(x$fpl$dretinf)
+    _fp_init                                 0x0000388d   Thumb Code    26  fpinit.o(x$fpl$fpinit)
+    __fplib_config_fpu_vfp                   0x000038a5   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    __fplib_config_pureend_doubles           0x000038a5   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    __I$use$fp                               0x000038a6   Number         0  usenofp.o(x$fpl$usenofp)
+    Region$$Table$$Base                      0x000038a8   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x000038c8   Number         0  anon$$obj.o(Region$$Table)
     SystemCoreClock                          0x20000000   Data           4  system_tm4c123.o(.data.SystemCoreClock)
     a_ledCfgPins                             0x20000004   Data           9  led_config.o(.data.a_ledCfgPins)
     a_pushBtnCfgPins                         0x2000000d   Data           6  push_button_cfg.o(.data.a_pushBtnCfgPins)
@@ -1042,9 +1044,9 @@ Memory Map of the image
 
   Image Entry point : 0x00000319
 
-  Load Region LR_1 (Base: 0x00000000, Size: 0x00003968, Max: 0xffffffff, ABSOLUTE)
+  Load Region LR_1 (Base: 0x00000000, Size: 0x00003980, Max: 0xffffffff, ABSOLUTE)
 
-    Execution Region ER_RO (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x000038b0, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RO (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x000038c8, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -1193,38 +1195,39 @@ Memory Map of the image
     0x000033a8   0x000033a8   0x00000014   Code   RO           91    .text.main          main.o
     0x000033bc   0x000033bc   0x00000030   Code   RO          166    .text.pwm_init_timer  pwm_prog.o
     0x000033ec   0x000033ec   0x00000080   Code   RO          239    .text.read_start_btn  app.o
-    0x0000346c   0x0000346c   0x00000020   Code   RO          233    .text.stopSystem    app.o
-    0x0000348c   0x0000348c   0x0000000e   Code   RO          229    .text.timeOut       app.o
-    0x0000349a   0x0000349a   0x00000002   PAD
-    0x0000349c   0x0000349c   0x000002b0   Code   RO          299    x$fpl$ddiv          fz_wm.l(ddiv.o)
-    0x0000374c   0x0000374c   0x0000005a   Code   RO          302    x$fpl$dfixu         fz_wm.l(dfixu.o)
-    0x000037a6   0x000037a6   0x00000026   Code   RO          306    x$fpl$dfltu         fz_wm.l(dflt_clz.o)
-    0x000037cc   0x000037cc   0x0000009c   Code   RO          313    x$fpl$dnaninf       fz_wm.l(dnaninf.o)
-    0x00003868   0x00003868   0x0000000c   Code   RO          315    x$fpl$dretinf       fz_wm.l(dretinf.o)
-    0x00003874   0x00003874   0x0000001a   Code   RO          402    x$fpl$fpinit        fz_wm.l(fpinit.o)
-    0x0000388e   0x0000388e   0x00000000   Code   RO          317    x$fpl$usenofp       fz_wm.l(usenofp.o)
-    0x0000388e   0x0000388e   0x00000002   PAD
-    0x00003890   0x00003890   0x00000020   Data   RO          477    Region$$Table       anon$$obj.o
+    0x0000346c   0x0000346c   0x00000036   Code   RO          233    .text.stopSystem    app.o
+    0x000034a2   0x000034a2   0x00000002   PAD
+    0x000034a4   0x000034a4   0x0000000e   Code   RO          229    .text.timeOut       app.o
+    0x000034b2   0x000034b2   0x00000002   PAD
+    0x000034b4   0x000034b4   0x000002b0   Code   RO          299    x$fpl$ddiv          fz_wm.l(ddiv.o)
+    0x00003764   0x00003764   0x0000005a   Code   RO          302    x$fpl$dfixu         fz_wm.l(dfixu.o)
+    0x000037be   0x000037be   0x00000026   Code   RO          306    x$fpl$dfltu         fz_wm.l(dflt_clz.o)
+    0x000037e4   0x000037e4   0x0000009c   Code   RO          313    x$fpl$dnaninf       fz_wm.l(dnaninf.o)
+    0x00003880   0x00003880   0x0000000c   Code   RO          315    x$fpl$dretinf       fz_wm.l(dretinf.o)
+    0x0000388c   0x0000388c   0x0000001a   Code   RO          402    x$fpl$fpinit        fz_wm.l(fpinit.o)
+    0x000038a6   0x000038a6   0x00000000   Code   RO          317    x$fpl$usenofp       fz_wm.l(usenofp.o)
+    0x000038a6   0x000038a6   0x00000002   PAD
+    0x000038a8   0x000038a8   0x00000020   Data   RO          477    Region$$Table       anon$$obj.o
 
 
-    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x000038b0, Size: 0x000000b8, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x000038c8, Size: 0x000000b8, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x000038b0   0x00000004   Data   RW          284    .data.SystemCoreClock  system_tm4c123.o
-    0x20000004   0x000038b4   0x00000009   Data   RW          100    .data.a_ledCfgPins  led_config.o
-    0x2000000d   0x000038bd   0x00000006   Data   RW          188    .data.a_pushBtnCfgPins  push_button_cfg.o
-    0x20000013   0x000038c3   0x00000001   PAD
-    0x20000014   0x000038c4   0x00000030   Data   RW          155    .data.arr_str_gconst_pwm_configs  pwm_cfg.o
-    0x20000044   0x000038f4   0x00000001   Data   RW          176    .data.bool_gl_is_high  pwm_prog.o
-    0x20000045   0x000038f5   0x00000001   Data   RW          259    .data.enu_gl_car_state  app.o
-    0x20000046   0x000038f6   0x00000002   PAD
-    0x20000048   0x000038f8   0x00000008   Data   RW          179    .data.gl_str_GPT_config  pwm_prog.o
-    0x20000050   0x00003900   0x00000060   Data   RW          148    .data.str_g_carMotors  dcm_cfg.o
-    0x200000b0   0x00003960   0x00000008   Data   RW          260    .data.str_gl_timer  app.o
+    0x20000000   0x000038c8   0x00000004   Data   RW          284    .data.SystemCoreClock  system_tm4c123.o
+    0x20000004   0x000038cc   0x00000009   Data   RW          100    .data.a_ledCfgPins  led_config.o
+    0x2000000d   0x000038d5   0x00000006   Data   RW          188    .data.a_pushBtnCfgPins  push_button_cfg.o
+    0x20000013   0x000038db   0x00000001   PAD
+    0x20000014   0x000038dc   0x00000030   Data   RW          155    .data.arr_str_gconst_pwm_configs  pwm_cfg.o
+    0x20000044   0x0000390c   0x00000001   Data   RW          176    .data.bool_gl_is_high  pwm_prog.o
+    0x20000045   0x0000390d   0x00000001   Data   RW          259    .data.enu_gl_car_state  app.o
+    0x20000046   0x0000390e   0x00000002   PAD
+    0x20000048   0x00003910   0x00000008   Data   RW          179    .data.gl_str_GPT_config  pwm_prog.o
+    0x20000050   0x00003918   0x00000060   Data   RW          148    .data.str_g_carMotors  dcm_cfg.o
+    0x200000b0   0x00003978   0x00000008   Data   RW          260    .data.str_gl_timer  app.o
 
 
-    Execution Region ER_ZI (Exec base: 0x200000b8, Load base: 0x00003968, Size: 0x00000368, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_ZI (Exec base: 0x200000b8, Load base: 0x00003980, Size: 0x00000368, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -1241,12 +1244,12 @@ Memory Map of the image
     0x200001d4        -       0x00000001   Zero   RW          175    .bss.bool_gl_is_timer_init  pwm_prog.o
     0x200001d5        -       0x00000001   Zero   RW          257    .bss.bool_gl_lock_state  app.o
     0x200001d6        -       0x0000000c   Zero   RW           81    .bss.bool_gs_is_timer_init  gpt_program.o
-    0x200001e2   0x00003968   0x00000002   PAD
+    0x200001e2   0x00003980   0x00000002   PAD
     0x200001e4        -       0x00000030   Zero   RW           82    .bss.ptrf_gs_array  gpt_program.o
     0x20000214        -       0x00000002   Zero   RW          177    .bss.u16_gs_high_period  pwm_prog.o
     0x20000216        -       0x00000002   Zero   RW          178    .bss.u16_gs_low_period  pwm_prog.o
     0x20000218        -       0x00000001   Zero   RW          255    .bss.u8_gl_stop_or_rotate  app.o
-    0x20000219   0x00003968   0x00000007   PAD
+    0x20000219   0x00003980   0x00000007   PAD
     0x20000220        -       0x00000000   Zero   RW          269    HEAP                startup_tm4c123.o
     0x20000220        -       0x00000200   Zero   RW          268    STACK               startup_tm4c123.o
 
@@ -1258,7 +1261,7 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-      1424          0          0          9          4       3877   app.o
+      1446          0          0          9          4       3879   app.o
        660          0          0          0          0       4785   dc_motor_prog.o
          0          0          0         96          0       2583   dcm_cfg.o
       5732          0          0          0        184      10802   gpio_prog.o
@@ -1275,9 +1278,9 @@ Image component sizes
        268          0          0          4          0       6713   system_tm4c123.o
 
     ----------------------------------------------------------------------
-     12056         48        652        184        776      61987   Object Totals
+     12080         48        652        184        776      61989   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-        56          0          0          3          9          0   (incl. Padding)
+        58          0          0          3          9          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -1341,15 +1344,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     13860        270        652        184        872      62979   Grand Totals
-     13860        270        652        184        872      62979   ELF Image Totals
-     13860        270        652        184          0          0   ROM Totals
+     13884        270        652        184        872      62981   Grand Totals
+     13884        270        652        184        872      62981   ELF Image Totals
+     13884        270        652        184          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                14512 (  14.17kB)
+    Total RO  Size (Code + RO Data)                14536 (  14.20kB)
     Total RW  Size (RW Data + ZI Data)              1056 (   1.03kB)
-    Total ROM Size (Code + RO Data + RW Data)      14696 (  14.35kB)
+    Total ROM Size (Code + RO Data + RW Data)      14720 (  14.38kB)
 
 ==============================================================================
 

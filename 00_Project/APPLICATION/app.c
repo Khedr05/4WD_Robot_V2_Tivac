@@ -222,8 +222,10 @@ void car_rotate(void)
 void stopSystem(void)
 {
 	car_stop();
-	bool_gl_idle_stop = TRUE;
-	enu_gl_car_state  = IDLE;
+	bool_gl_idle_stop  = TRUE;
+	bool_gl_lock_state = FALSE;
+	bool_gl_is_timeOut = FALSE;
+	enu_gl_car_state   = IDLE;
 }
 
 
