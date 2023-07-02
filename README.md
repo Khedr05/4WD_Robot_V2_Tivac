@@ -65,7 +65,7 @@
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Object Files
-> - ` Hex_file`[[Hex_file]](https://github.com/sherifkhadr/4WD_Robot_V2_Tivac/tree/delivery_branch/Hex_File)https://github.com/sherifkhadr/4WD_Robot_V2_Tivac/tree/delivery_branch/Hex_File)
+> - ` Hex_file`[[Hex_file](https://github.com/sherifkhadr/4WD_Robot_V2_Tivac/tree/delivery_branch/Hex_File)
 
 
 
